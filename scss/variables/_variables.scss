@@ -1,21 +1,28 @@
 /* Global variables */
 /* ======================================================================== */
-$main_font_family: "Roboto";
+$main_font_family: "Open Sans";
 $second_font_family: "Roboto Slab";
-$main_color: #000;
+$main_color: #423131;
 $main_line_height: 1.2;
 $main_font_size: 1em;
 
-$container_width: 80em;
+$container_width: 96.875em;
+/* 1550/16 */
+/* 1552/16 */
+/* 1520/16 */
 
 $footer_height: auto;
 
 // Color collection for elements
+$color_title: #222424;
+
+$color_warning: #FF8A00;
+$color_info: #0F697C;
+$color_success: #008947;
+$color_danger: #E30016;
+
 $color_primary: #7b8287;
-$color_success: #36a566;
-$color_info: #03a9f4;
-$color_warning: #fca33e;
-$color_danger: #ff1a1a;
+
 $color_white: #ffffff;
 
 /* Grid */

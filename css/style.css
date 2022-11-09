@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* Global variables */
 /* ======================================================================== */
+/* 1550/16 */
+/* 1552/16 */
+/* 1520/16 */
 /* Grid */
 /* ======================================================================== */
 /* 20/16 */
@@ -8,59 +11,38 @@
 /* ======================================================================== */
 @import "../fonts/icon/style.css";
 @font-face {
-  font-family: "Roboto";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/Roboto/Roboto-Medium.eot?") format("eot"), url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Medium.svg#str-replace("Roboto", " ", "_")') format("svg");
+  src: url("../fonts/OpenSans/OpenSans-Medium.eot?") format("eot"), url("../fonts/OpenSans/OpenSans-Medium.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Medium.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Medium.ttf") format("truetype"), url('../fonts/OpenSans/OpenSans-Medium.svg#str-replace("Open Sans", " ", "_")') format("svg");
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/Roboto/Roboto-Bold.eot?") format("eot"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Bold.svg#str-replace("Roboto", " ", "_")') format("svg");
+  src: url("../fonts/OpenSans/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans/OpenSans-Bold.svg#str-replace("Open Sans", " ", "_")') format("svg");
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Roboto/Roboto-Light.eot?") format("eot"), url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Light.svg#str-replace("Roboto", " ", "_")') format("svg");
+  src: url("../fonts/OpenSans/OpenSans-Light.eot?") format("eot"), url("../fonts/OpenSans/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype"), url('../fonts/OpenSans/OpenSans-Light.svg#str-replace("Open Sans", " ", "_")') format("svg");
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/Roboto/Roboto-Regular.eot?") format("eot"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Regular.svg#str-replace("Roboto", " ", "_")') format("svg");
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot?") format("eot"), url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"), url('../fonts/OpenSans/OpenSans-Regular.svg#str-replace("Open Sans", " ", "_")') format("svg");
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto Slab";
+  font-family: "Open Sans";
   font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/Roboto_Slab/RobotoSlab-Bold.eot?") format("eot"), url("../fonts/Roboto_Slab/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/Roboto_Slab/RobotoSlab-Bold.woff") format("woff"), url("../fonts/Roboto_Slab/RobotoSlab-Bold.ttf") format("truetype"), url('../fonts/Roboto_Slab/RobotoSlab-Bold.svg#str-replace("Roboto Slab", " ", "_")') format("svg");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Roboto_Slab/RobotoSlab-Light.eot?") format("eot"), url("../fonts/Roboto_Slab/RobotoSlab-Light.woff2") format("woff2"), url("../fonts/Roboto_Slab/RobotoSlab-Light.woff") format("woff"), url("../fonts/Roboto_Slab/RobotoSlab-Light.ttf") format("truetype"), url('../fonts/Roboto_Slab/RobotoSlab-Light.svg#str-replace("Roboto Slab", " ", "_")') format("svg");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/Roboto_Slab/RobotoSlab-Medium.eot?") format("eot"), url("../fonts/Roboto_Slab/RobotoSlab-Medium.woff2") format("woff2"), url("../fonts/Roboto_Slab/RobotoSlab-Medium.woff") format("woff"), url("../fonts/Roboto_Slab/RobotoSlab-Medium.ttf") format("truetype"), url('../fonts/Roboto_Slab/RobotoSlab-Medium.svg#str-replace("Roboto Slab", " ", "_")') format("svg");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.eot?") format("eot"), url("../fonts/Roboto_Slab/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/Roboto_Slab/RobotoSlab-Regular.woff") format("woff"), url("../fonts/Roboto_Slab/RobotoSlab-Regular.ttf") format("truetype"), url('../fonts/Roboto_Slab/RobotoSlab-Regular.svg#str-replace("Roboto Slab", " ", "_")') format("svg");
+  font-weight: 600;
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.eot?") format("eot"), url("../fonts/OpenSans/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype"), url('../fonts/OpenSans/OpenSans-SemiBold.svg#str-replace("Open Sans", " ", "_")') format("svg");
   font-display: swap;
 }
 * {
@@ -521,28 +503,21 @@ template {
 }
 
 body {
-  font-family: "Roboto";
-  color: #000;
+  font-family: "Open Sans";
+  color: #423131;
   line-height: 1.2;
-  font-size: calc(.034 * 100vw + 0px);
+  font-size: calc(.0426666 * 100vw + 0px);
 }
 @media (min-width: 768px) {
   body {
-    font-size: calc(.00838 * 100vw + 0px);
+    font-size: calc(.00833334 * 100vw + 0px);
   }
 }
-@media (min-width: 1600px) {
-  body {
-    font-size: 1em;
-  }
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
   height: auto;
   min-height: 100%;
-  font-size: 1em;
 }
 
 /* Middle
@@ -552,8 +527,8 @@ body {
 }
 
 .container_center, .footer__content, .header__content {
-  max-width: 80em;
-  padding: 0 1em;
+  max-width: 96.875em;
+  padding: 0 0.9375em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -562,7 +537,7 @@ body {
   padding: 2em 0;
 }
 .section__title {
-  font-family: "Roboto Slab";
+  font-family: "Open Sans";
   font-weight: 400;
 }
 
@@ -576,6 +551,46 @@ body {
   .mobile {
     display: none !important;
   }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.counter-wrap {
+  counter-reset: line var(--line-num, 0);
+}
+
+.counter-item {
+  counter-increment: line;
+}
+.counter-item .counter-el:before {
+  content: "0";
+}
+.counter-item .counter-el:after {
+  content: counter(line) " ";
 }
 
 /* Header
@@ -599,7 +614,7 @@ body {
     right: 1em;
     width: 1.25em;
     height: 0.875em;
-    color: #000;
+    color: #423131;
     border: 0.125em solid;
     border-left: 0;
     border-right: 0;
@@ -633,7 +648,7 @@ body {
   }
   .header__toggle_open:after, .header__toggle_open:before {
     content: "";
-    border-top: 0.125em solid #000;
+    border-top: 0.125em solid #423131;
   }
   .header__toggle_open:before {
     transform: rotate(45deg);
@@ -706,7 +721,7 @@ body {
 }
 .menu-item a {
   font-family: "Roboto Slab";
-  color: #000;
+  color: #423131;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -760,7 +775,7 @@ body {
 }
 
 .current-menu-item > a {
-  color: #36a566;
+  color: #008947;
 }
 
 .nav-open {
@@ -867,8 +882,8 @@ input[type=url],
 textarea {
   background-color: #fff;
   border: 0.0625em solid #ddd;
-  font-family: "Roboto";
-  color: #000;
+  font-family: "Open Sans";
+  color: #423131;
   padding: 0.5em 1em;
   outline: none;
   font-size: 1em;
@@ -1094,7 +1109,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 }
 .select2-container--default .select2-results__option--selected {
   background: rgba(0, 110, 255, 0.19);
-  color: #000;
+  color: #423131;
 }
 .select2-container--default .select2-dropdown {
   position: absolute;
@@ -1108,8 +1123,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .select2-container--default .select2-selection {
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
-  font-family: "Roboto";
-  color: #000;
+  font-family: "Open Sans";
+  color: #423131;
   padding: 0.65em 1em;
   outline: none;
   font-weight: 400;
@@ -1136,7 +1151,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   line-height: 1;
   padding: 0 1em 0 0;
-  color: #000;
+  color: #423131;
 }
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
   color: #ddd;
@@ -1203,8 +1218,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .select2-container--default.select2-container--disabled .select2-selection {
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
-  font-family: "Roboto";
-  color: #000;
+  font-family: "Open Sans";
+  color: #423131;
   padding: 0.971em 1.175em;
   outline: none;
   font-weight: 400;
@@ -1222,37 +1237,65 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   color: rgba(29, 29, 27, 0.5);
 }
 
-.breadcrumb {
-  margin: 1.1em 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.breadcrumbs {
+  padding-top: 4.5em !important;
+  padding-bottom: 0;
 }
-.breadcrumb li {
-  display: inline-block;
-  display: flex;
-  align-items: center;
+@media (min-width: 768px) {
+  .breadcrumbs {
+    padding-top: 14.5em !important;
+  }
 }
-.breadcrumb li:not(:first-child):before {
-  content: "/";
-  display: inline-block;
-  margin: 0 1.2em;
-  color: rgba(29, 29, 27, 0.5);
-}
-.breadcrumb li:last-child a {
-  cursor: default;
-  text-decoration: none;
-  color: #000;
+.breadcrumbs .kama_breadcrumbs a {
   text-decoration: none;
 }
-.breadcrumb li a {
+.breadcrumbs .kama_breadcrumbs a,
+.breadcrumbs .kama_breadcrumbs span {
+  color: #B3B3B3;
+}
+.breadcrumbs .kama_breadcrumbs span {
+  font-size: 0.6em;
+}
+@media (min-width: 768px) {
+  .breadcrumbs .kama_breadcrumbs span {
+    font-size: 0.875em;
+  }
+}
+.breadcrumbs .kama_breadcrumbs span > a > span {
   font-size: 1em;
-  color: rgba(29, 29, 27, 0.5);
-  text-decoration: none;
 }
-.breadcrumb li a:hover {
-  text-decoration: underline;
+.breadcrumbs .kama_breadcrumbs .kb_sep {
+  transform: translateY(-0.15em);
+  display: inline-block;
+  margin: 0 0.75em;
+  width: 0.3125em;
+  height: 0.3125em;
+  background-color: #FF8A00;
+  font-size: 0.6em;
+}
+@media (min-width: 768px) {
+  .breadcrumbs .kama_breadcrumbs .kb_sep {
+    font-size: 1em;
+  }
+}
+.breadcrumbs .kama_breadcrumbs .kb_title {
+  color: #423131;
+  font-weight: 600;
+}
+.breadcrumbs_reverse {
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+@media (min-width: 768px) {
+  .breadcrumbs_reverse {
+    top: 0;
+  }
+}
+.breadcrumbs_reverse .kama_breadcrumbs .kb_title {
+  color: #ffffff;
 }
 
 .pagination {
@@ -1274,8 +1317,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 }
 
 .btn {
-  color: #000;
-  font-family: "Roboto";
+  color: #423131;
+  font-family: "Open Sans";
   font-size: 1em;
   font-weight: 400;
   padding: 0.3125em 1em 0.4375em;
@@ -1296,11 +1339,11 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 }
 .btn:hover {
   background-color: #cbcbcb;
-  color: #000;
+  color: #423131;
 }
 .btn:active, .btn:focus {
   background-color: #c4c4c4;
-  color: #000;
+  color: #423131;
 }
 .btn:disabled {
   color: red;
@@ -1380,7 +1423,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   width: 2.625em;
   height: 2.625em;
   border-radius: 50%;
-  color: #36a566;
+  color: #008947;
   background-color: #F1FBF6;
   transform: rotate(0deg);
   transition: 0.3s;
@@ -1389,12 +1432,12 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .collapse__title.open:after {
   transform: rotate(180deg);
   color: #ffffff;
-  background-color: #36a566;
+  background-color: #008947;
 }
 .collapse__body {
   display: none;
   margin-top: -0.5em;
-  color: #03a9f4;
+  color: #0F697C;
 }
 @media (min-width: 992px) {
   .collapse__body {
@@ -1566,6 +1609,124 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   }
 }
 
+.toTop {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  bottom: 2em;
+  right: 1em;
+}
+@media (min-width: 768px) {
+  .toTop {
+    bottom: 5em;
+    right: 2em;
+  }
+}
+.toTop a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.125em;
+  height: 3.125em;
+  border-radius: 0.0625em;
+  background-color: #FF8A00;
+  color: #ffffff;
+  font-size: 0.75em;
+}
+@media (min-width: 768px) {
+  .toTop a {
+    font-size: 1em;
+  }
+}
+.toTop i {
+  font-size: 1.25em;
+  animation: action 0.5s linear alternate infinite;
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.3s;
+}
+.preloader.hide {
+  opacity: 0;
+}
+.preloader .ap {
+  width: 8em;
+  height: 16em;
+}
+.preloader .ap__ring {
+  stroke: rgba(15, 105, 124, 0.25);
+  transition: stroke 0.3s;
+}
+.preloader .ap__worm1,
+.preloader .ap__worm2 {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.preloader .ap__worm1 {
+  animation-name: worm1;
+}
+.preloader .ap__worm2 {
+  animation-name: worm2;
+  visibility: hidden;
+}
+
+/* Animtions */
+@keyframes worm1 {
+  from {
+    animation-timing-function: ease-in-out;
+    stroke-dashoffset: -87.96;
+  }
+  20% {
+    animation-timing-function: ease-in;
+    stroke-dashoffset: 0;
+  }
+  60% {
+    stroke-dashoffset: -791.68;
+    visibility: visible;
+  }
+  60.1%, to {
+    stroke-dashoffset: -791.68;
+    visibility: hidden;
+  }
+}
+@keyframes worm2 {
+  60%, from {
+    stroke-dashoffset: -87.96;
+    visibility: hidden;
+  }
+  60.1% {
+    animation-timing-function: cubic-bezier(0, 0, 0.5, 0.75);
+    stroke-dashoffset: -87.96;
+    visibility: visible;
+  }
+  77% {
+    animation-timing-function: cubic-bezier(0.5, 0.25, 0.5, 0.88);
+    stroke-dashoffset: -340;
+    visibility: visible;
+  }
+  to {
+    stroke-dashoffset: -669.92;
+    visibility: visible;
+  }
+}
 .modal {
   display: none;
   overflow: auto;
@@ -1591,7 +1752,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: #423131;
 }
 .modal-close:after, .modal-close:before {
   content: "";

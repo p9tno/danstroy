@@ -1,3 +1,7 @@
+block variable
+    -var path = '';
+    -var page = true;
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -6,16 +10,65 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
 
-        //- link(rel="stylesheet", type="text/css", href="css/select2.min.css")
-        link(rel="stylesheet", type="text/css", href="css/style.css")
+        link(rel="stylesheet", type="text/css", href=path +"css/twentytwenty.css")
+        link(rel="stylesheet", type="text/css", href=path +"css/swiper-bundle.min.css")
+        link(rel="stylesheet", type="text/css", href=path +"css/aos.css")
+        link(rel="stylesheet", type="text/css", href=path +"css/fancybox.min.css")
+
+        link(rel="stylesheet", type="text/css", href=path + "css/style.css")
     body
-        .wrapper
+
+        //- #preloader.preloader
+        //-     <svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+        //-         <defs>
+
+        //-             <linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+        //-                 <stop offset="0%" stop-color="hsl(192,73%,40%)" />
+        //-                 <stop offset="100%" stop-color="hsl(192,73%,26%)" />
+        //-             </linearGradient>
+
+        //-             <linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+        //-                 <stop offset="0%" stop-color="hsl(192,73%,45%)" />
+        //-                 <stop offset="50%" stop-color="hsl(192,73%,40%)" />
+        //-                 <stop offset="100%" stop-color="hsl(192,73%,26%)" />
+        //-             </linearGradient>
+
+        //-         </defs>
+        //-         <circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+        //-         <circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+        //-         <path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+        //-     </svg>
+
+        .wrapper#wrapper
             include header.pug
 
             main.main_content
                 block content
 
-            include footer.pug
 
-            include scripts.pug
-            .nav_open_bg
+
+
+            //- begin toTop
+            //- .toTop
+            //-     a(href="#wrapper") 
+            //-         i.icon_to_top
+
+            //- end toTop
+
+            include footer.pug
+            include modal.pug
+
+            script(src=path +"js/jquery.js")
+            script(src=path +"js/jquery.maskedinput.min.js")
+            script(src=path +"js/modal.js")
+            script(src=path +"js/swiper-bundle.min.js")
+            script(src=path +"js/slider.js")
+            script(src=path +"js/jquery.event.move.js")
+            script(src=path +"js/jquery.twentytwenty.js")
+            script(src=path +"js/aos.js")
+            script(src=path +"js/fancybox.min.js")
+            script(src=path +"js/form.js")
+
+            script(src=path +"js/function.js")
+
+

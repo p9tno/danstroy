@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?emjvh7');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?emjvh7#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?emjvh7') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?emjvh7') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?emjvh7##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?4ho8ck');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?4ho8ck#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?4ho8ck') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?4ho8ck') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?4ho8ck##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon_"], [class*=" icon_"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
   speak: never;
@@ -27,29 +27,134 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home {
+.icon_arrow_sm {
   &:before {
-    content: $icon-home; 
+    content: $icon_arrow_sm; 
   }
 }
-.icon-clock2 {
+.icon_arrow_left {
   &:before {
-    content: $icon-clock2; 
+    content: $icon_arrow_left; 
   }
 }
-.icon-calendar {
+.icon_arrow_top {
   &:before {
-    content: $icon-calendar; 
+    content: $icon_arrow_top; 
   }
 }
-.icon-printer {
+.icon_arrow_right {
   &:before {
-    content: $icon-printer; 
+    content: $icon_arrow_right; 
   }
 }
-.icon-arrow-down {
+.icon_arrow_bottom {
   &:before {
-    content: $icon-arrow-down; 
+    content: $icon_arrow_bottom; 
+  }
+}
+.icon_mark {
+  &:before {
+    content: $icon_mark; 
+  }
+}
+.icon_clock {
+  &:before {
+    content: $icon_clock; 
+  }
+}
+.icon_phone {
+  &:before {
+    content: $icon_phone; 
+  }
+}
+.icon_location {
+  &:before {
+    content: $icon_location; 
+  }
+}
+.icon_callback {
+  &:before {
+    content: $icon_callback; 
+  }
+}
+.icon_toggle {
+  &:before {
+    content: $icon_toggle; 
+  }
+}
+.icon_discont {
+  &:before {
+    content: $icon_discont; 
+  }
+}
+.icon_bag {
+  &:before {
+    content: $icon_bag; 
+  }
+}
+.icon_recall {
+  &:before {
+    content: $icon_recall; 
+  }
+}
+.icon_guarantee {
+  &:before {
+    content: $icon_guarantee; 
+  }
+}
+.icon_info {
+  &:before {
+    content: $icon_info; 
+  }
+}
+.icon_water {
+  &:before {
+    content: $icon_water; 
+  }
+}
+.icon_tree {
+  &:before {
+    content: $icon_tree; 
+  }
+}
+.icon_trowel {
+  &:before {
+    content: $icon_trowel; 
+  }
+}
+.icon_monolithic {
+  &:before {
+    content: $icon_monolithic; 
+  }
+}
+.icon_machine {
+  &:before {
+    content: $icon_machine; 
+  }
+}
+.icon_crane {
+  &:before {
+    content: $icon_crane; 
+  }
+}
+.icon_twiter {
+  &:before {
+    content: $icon_twiter; 
+  }
+}
+.icon_vk {
+  &:before {
+    content: $icon_vk; 
+  }
+}
+.icon_instagram {
+  &:before {
+    content: $icon_instagram; 
+  }
+}
+.icon_facebook {
+  &:before {
+    content: $icon_facebook; 
   }
 }
 

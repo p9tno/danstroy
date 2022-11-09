@@ -1,42 +1,21 @@
-var app = {
-    pageScroll: '',
-    lgWidth: 1200,
-    mdWidth: 992,
-    smWidth: 768,
-    resized: false,
-    iOS: function () {
-        return navigator.userAgent.match( /iPhone|iPad|iPod/i );
-    },
-    touchDevice: function () {
-        return navigator.userAgent.match( /iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i );
-    }
-};
-
-function isLgWidth() {
-    return $( window ).width() >= app.lgWidth;
-} // >= 1200
-function isMdWidth() {
-    return $( window ).width() >= app.mdWidth && $( window ).width() < app.lgWidth;
-} //  >= 992 && < 1200
-function isSmWidth() {
-    return $( window ).width() >= app.smWidth && $( window ).width() < app.mdWidth;
-} // >= 768 && < 992
-function isXsWidth() {
-    return $( window ).width() < app.smWidth;
-} // < 768
-function isIOS() {
-    return app.iOS();
-} // for iPhone iPad iPod
-function isTouch() {
-    return app.touchDevice();
-} // for touch device
-
-
-
-
-
-
 $(document).ready(function() {
+
+    // function preloader() {
+    //     $(()=>{
+
+    //         setTimeout( () => {
+    //             let p = $('#preloader');
+    //             p.addClass('hide');
+
+    //             setTimeout( () => {
+    //                 p.remove()
+    //             },1000);
+
+    //         },1000);
+    //     });
+    // }
+    // preloader();
+    // setTimeout( ()=> preloader(),15000 )
 
 
     function openMobileNav() {
@@ -139,27 +118,7 @@ $(document).ready(function() {
     };
     doDrop();
 
-    $('.js-slider').slick({
-        dots: true,
-        // prevArrow: '<i class="icon-left"></i>',
-        // nextArrow: '<i class="icon-right"></i>',
-        speed: 1000,
-        adaptiveHeight: true,
-        responsive: [
-            {
-                breakpoint: 576,
-                settings: {
-                    arrows:false,
-                }
-            },
-        ]
-    })
-
-    $('.select').select2({
-        placeholder: $(this).data('placeholder'),
-        minimumResultsForSearch: Infinity
-    });
-
+ 
     // Stiky menu // Липкое меню. При прокрутке к элементу #header добавляется класс .stiky который и стилизуем
     function stikyMenu() {
         let HeaderTop = $( 'header' ).offset().top;
@@ -199,42 +158,6 @@ $(document).ready(function() {
 
     }
 
-    // Видео youtube для страницы
-    function uploadYoutubeVideo() {
-        if ( $( ".js-youtube" ) ) {
-
-            $( ".js-youtube" ).each( function () {
-                // Зная идентификатор видео на YouTube, легко можно найти его миниатюру
-                $( this ).css( 'background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)' );
-
-                // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
-                $( this ).append( $( '<img src="../wp-content/themes/gymn/assets/img/play.png" alt="Play" class="video__play">' ) );
-
-            } );
-
-            $( '.video__play, .video__prev' ).on( 'click', function () {
-                // создаем iframe со включенной опцией autoplay
-                let wrapp = $( this ).closest( '.js-youtube' ),
-                    videoId = wrapp.attr( 'id' ),
-                    iframe_url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=1";
-
-                if ( $( this ).data( 'params' ) ) iframe_url += '&' + $( this ).data( 'params' );
-
-                // Высота и ширина iframe должны быть такими же, как и у родительского блока
-                let iframe = $( '<iframe/>', {
-                    'frameborder': '0',
-                    'src': iframe_url,
-                    'allow': "autoplay"
-                } )
-
-                // Заменяем миниатюру HTML5 плеером с YouTube
-                $( this ).closest( '.video__wrapper' ).append( iframe );
-
-            } );
-        }
-    };
-
-    uploadYoutubeVideo();
     // start animate numbers
 
     function onVisible( selector, callback, repeat = false ) {
@@ -277,23 +200,9 @@ $(document).ready(function() {
             }
         }, duration / final );
     }
-    
+    // end animate numbers
+
 })
-// end animate numbers
 
 
-gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".panel").forEach((panel, i) => {
-  ScrollTrigger.create({
-    trigger: panel,
-    start: "top top",
-    pin: true,
-    pinSpacing: false
-  });
-});
-
-
-ScrollTrigger.create({
-  snap: 1 / 4 // snap whole page to the closest section!
-});
