@@ -7,6 +7,7 @@
 @import 'core/template';
 
 @import 'core/header';
+@import 'core/navbar';
 
 @import 'core/footer';
 
@@ -25,6 +26,11 @@
 @import 'core/programsInfo';
 @import 'core/toTop';
 @import 'core/preloader';
+@import 'core/search';
+
+@import 'core/info';
+@import 'core/soc';
+@import 'core/payment';
 
 @import 'vendor/modal';
 @import 'vendor/slick';

@@ -44,6 +44,19 @@ $(document).ready(function() {
     };
     activeNav();
 
+    function openDropMenu(){
+        $('.footer__nav .icon_arrow_bottom').on('click', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('open');
+            let dropBox = $(this).parent().parent().children();
+            // console.log(dropBox);
+            // dropBox.slideDown();
+            dropBox.toggleClass('open');
+            
+        });
+    }
+    openDropMenu();
+
 
     function collapsed() {
         let toggle = $('[data-collapse]');
@@ -118,7 +131,7 @@ $(document).ready(function() {
     };
     doDrop();
 
- 
+
     // Stiky menu // Липкое меню. При прокрутке к элементу #header добавляется класс .stiky который и стилизуем
     function stikyMenu() {
         let HeaderTop = $( 'header' ).offset().top;
@@ -203,6 +216,3 @@ $(document).ready(function() {
     // end animate numbers
 
 })
-
-
-

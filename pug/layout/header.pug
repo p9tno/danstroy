@@ -1,25 +1,94 @@
 header.header
     .header__content
-        .header__logo
-            a.logo(href="/")
-                img(src="/img/logo.svg", alt="alt")
+        .header__top
+            .header__logo
+                a.logo.img(href="/")
+                    img(src="/img/logo.svg", alt="alt")
+            .header__search
+                .search
+                    .search-form__inner
+                        form.search-form
+                            input(type="text" placeholder="Введите для поиска").search-form__input
+                            button.btn_search
+                                i.icon_loop
+
+            .header__item
+                .header__icon
+                    i.icon_location
+                .header__text
+                    span Работаем в Санкт- <br>Петербурге и области
+            .header__item
+                .header__icon
+                    i.icon_clock
+                .header__text
+                    span 8:00 - 22:00
+                    span пн-вс
+            .header__item
+                .header__icon
+                    i.icon_phone
+                span +7 (812) 345-54-54
+            .header__item
+                .calback
+                    a(href="#").btn.btn.btn_callback.btn_bg 
+                        span Заказать звонок
+
+
+        .header__bottom 
+            .header__nav
+                nav.navbar#navbar
+                    ul.menu
+                        li.menu-item.menu-item-has-children
+                            a(href="#") Наши услуги
+                                i.icon_toggle
+                            ul.sub-menu
+                                li.menu-item.menu-item-has-children
+                                    a(href="#") Гидроизоляционные работы
+                                        i.icon_water
+                                    ul.sub-menu
+                                        each item in ['Въезд на дачный участок под ключ', 'Планировка рельефа', 'Демонтаж фундамента', 'Устройство парковки', 'Бетонная площадка под автомобиль', 'Мощение дорожек', 'Укрепление склонов', 'Габионы. МАФ', 'Укладка тротуарной плитки', 'Вывоз строительного мусора', 'Установка заборов' ]
+                                            li.menu-item
+                                                a(href="#")=item
+
+                                li.menu-item.menu-item-has-children
+                                    a(href="#") Благоустройство территории
+                                        i.icon_tree
+                                    ul.sub-menu
+                                        each item in ['Въезд на дачный участок под ключ', 'Планировка рельефа', 'Демонтаж фундамента', 'Устройство парковки', 'Бетонная площадка под автомобиль', 'Мощение дорожек', 'Укрепление склонов', 'Габионы. МАФ', 'Укладка тротуарной плитки', 'Вывоз строительного мусора', 'Установка заборов' ]
+                                            li.menu-item
+                                                a(href="#")=item
+                                li.menu-item
+                                    a(href="#") Общестроительные работы
+                                        i.icon_trowel
+                                li.menu-item.menu-item-has-children
+                                    a(href="#") Монолитные работы
+                                        i.icon_monolithic
+                                    ul.sub-menu
+                                        each item in ['Въезд на дачный участок под ключ', 'Планировка рельефа', 'Демонтаж фундамента', 'Устройство парковки', 'Бетонная площадка под автомобиль', 'Мощение дорожек' ]
+                                            li.menu-item
+                                                a(href="#")=item
+                                li.menu-item
+                                    a(href="#") Земляные работы 
+                                        i.icon_machine
+                                li.menu-item
+                                    a(href="#") Инженерные сети
+                                        i.icon_crane
+
+
+                        li.menu-item
+                            a(href="#") Акции и скидки
+                                i.icon_discont
+                        li.menu-item
+                            a(href="#") Примеры работ
+                                i.icon_bag
+                        li.menu-item
+                            a(href="#") Отзывы
+                                i.icon_recall
+                        li.menu-item
+                            a(href="#") Гарантии
+                                i.icon_guarantee
+                        li.menu-item
+                            a(href="#") Контакты
+                                i.icon_info
+
 
         .header__toggle
-
-        .header__nav
-            nav.navbar#navbar
-                ul.menu
-                    li.menu-item.current-menu-item
-                        a(href="#") Новости
-                    li.menu-item
-                        a(href="#") Объявления
-                    li.menu-item
-                        a(href="#") F.A.Q.
-                    li.menu-item
-                        a(href="#") Контакты
-                    li.menu-item.menu-item-has-children
-                        a(href="#") Важное
-                        ul.sub-menu
-                            each item in [1, 2, 3, 4]
-                                li.menu-item
-                                    a(href="#") Важный пункт меню

@@ -1,6 +1,171 @@
 footer.footer
+    .footer__el.bg.desktop
     .footer__content
-        p
-        | &copy; 2016 |
-        i.fa.fa-github(aria-hidden='true') &nbsp;
-        a(href='#') View Source
+
+        .footer__top
+            .container_center
+
+                .footer__logo.mobile
+                    a(href="#").logo.img
+                        img(src="img/logo_w.svg")
+                    .logo__desc.mobile
+                        span © ООО"Дан-Строй" 2019 - <script type="text/javascript">document.write(new Date().getFullYear());</script> Все права защищены
+
+                .footer__action.mobile
+                    .footer__phone
+                        a(href="tel:+7 (812) 345-54-54") +7 (812) 345-54-54
+                    .footer__calback
+                        a(href="#").btn.btn.btn_callback.btn_bg 
+                            span Заказать проект
+
+                .footer__nav
+                    ul.menu
+                        li.menu-item.menu-item-has-children
+                            a(href="#") Благоустройство территории 
+                                i.icon_arrow_bottom
+                            ul.sub-menu
+                                each item in ['Въезд на дачный участок под ключ', 'Планировка рельефа', 'Бетонная площадка под автомобиль', 'Устройство парковки', 'Демонтаж фундамента', 'Мощение дорожек', 'Укрепление склонов', 'Габионы. МАФ', 'Укладка тротуарной плитки', 'Вывоз строительного мусора', 'Установка заборов',]
+                                    li.menu-item
+                                        a(href="#")=item
+
+                        li.menu-item.menu-item-has-children
+                            a(href="#") Земляные работы 
+                                i.icon_arrow_bottom
+                            ul.sub-menu
+                                each item in ['Спил деревьев', 'Откопка котлованов', 'Рытьё траншей и канав', 'Отсыпка участка', 'Разработка грунта', 'Выравнивание', 'Расчистка', 'Раскорчёвка', 'Выторфовка' ]
+                                    li.menu-item
+                                        a(href="#")=item
+
+                        li.menu-item.menu-item-has-children
+                            a(href="#") Монолитные работы 
+                                i.icon_arrow_bottom
+                            ul.sub-menu
+                                each item in ['Железобетонные', 'Монолитные железобетонные работы', 'Опалубочные', 'Заливка опалубки бетонным растровом', 'Демонтаж опалубки', 'Арматурные' ]
+                                    li.menu-item
+                                        a(href="#")=item
+
+
+                        li.menu-item.menu-item-has-children
+                            a(href="#") ЗОбщестроительные работы
+                                i.icon_arrow_bottom
+                            ul.sub-menu
+                                each item in ['Заливка фундамента под дом', 'Свайно-винтовой фундамент', 'Ленточный фундамент', 'Фундамент плита', 'УШП фундамент', 'Подпорные стенки' ]
+                                    li.menu-item
+                                        a(href="#")=item
+
+                        li.menu-item.menu-item-has-children
+                            a(href="#") Инженерные сети
+                                i.icon_arrow_bottom
+                            ul.sub-menu
+                                each item in ['Напорный водопровод', 'Бытовая канализация', 'Ливнёвая канализация', 'Дренажная система', 'Автополив' ]
+                                    li.menu-item
+                                        a(href="#")=item
+
+                        li.menu-item.menu-item-has-children
+                            a(href="#") Гидроизоляционные работы
+                                i.icon_arrow_bottom
+                            ul.sub-menu
+                                each item in ['Гидроизоляция перекрытий', 'Гидроизоляция подвалов', 'Инъектирование' ]
+                                    li.menu-item
+                                        a(href="#")=item
+
+        .footer__main
+            .container_center
+                .footer__row
+
+                    .footer__logo.desktop 
+                        a(href="#").logo.img
+                            img(src="img/logo_w.svg")
+
+                    .footer__inner
+                        .footer__info
+                            .info
+                                .info__item.desktop
+                                    .info__icon
+                                        i.icon_phone
+                                    .info__label
+                                        span +7 (812) 345-54-54
+                                .info__item
+                                    .info__icon
+                                        i.icon_clock
+                                    .info__label
+                                        span ПН-ВС, 8:00 - 22:00
+                                .info__item
+                                    .info__icon
+                                        i.icon_location
+                                    .info__label
+                                        span Санкт-Петербург,<br> Орендовского д.353,<br> оф. 4
+                                .info__item
+                                    .info__icon
+                                        i.icon_mark
+                                    .info__label
+                                        span ИИН: 910<span></span> 234<span></span> 456 124
+                                .info__item
+                                    .info__icon
+                                        i.icon_mail
+                                    .info__label
+                                        span Pochta@primer.ru
+
+
+                        .footer__action.desktop
+                            .footer__phone
+                                .phone
+                                    span +7 (812) 345-54-54
+                            .footer__calback
+                                .calback
+                                    a(href="#").btn.btn.btn_callback.btn_bg 
+                                        span Заказать звонок
+
+
+
+                .footer__row
+                    ul.menu.desktop
+                        each item in ['Акции и скидки', 'Примеры работ', 'Отзывы', 'Гарантии', 'Контакты', 'Карта сайта' ]
+                            li.menu-item
+                                a(href="#")=item
+
+                    .footer__soc
+                        .soc
+                            .soc__item
+                                a(href="#").soc__link
+                                    i.icon_facebook
+                            .soc__item
+                                a(href="#").soc__link
+                                    i.icon_vk
+                            .soc__item
+                                a(href="#").soc__link
+                                    i.icon_twiter
+                            .soc__item
+                                a(href="#").soc__link
+                                    i.icon_instagram
+
+
+
+
+        .footer__bottom
+            .container_center 
+                .footer__row
+                    .footer__payment
+                        .payment
+                            .payment__item
+                                .payment__img
+                                    img(src="img/pay.svg")
+                            .payment__item
+                                .payment__img
+                                    img(src="img/mastercard.svg")
+                            .payment__item
+                                .payment__img
+                                    img(src="img/visa.svg")
+                            .payment__item
+                                .payment__img
+                                    img(src="img/mir.svg")
+                    .footer__more
+                        .more
+                            .more__item
+                                a(href="#") Политика концендициальности
+                            .more__item
+                                a(href="#") Сообщить об ошибке
+                            .more__item
+                                a(href="#") Политика обработки персональных данных
+                            .more__item.desktop
+                                span © ООО"Дан-Строй" 2019 - <script type="text/javascript">document.write(new Date().getFullYear());</script> Все права защищены

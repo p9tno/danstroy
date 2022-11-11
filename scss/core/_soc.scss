@@ -1,0 +1,28 @@
+.soc {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        margin-right: 0.75em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        display: inline-block;
+        color: rgba($color_white, 0.4);
+
+        i {
+            font-size: 1.969em;
+
+        }
+
+        &:hover {
+            color: rgba($color_white, 0.7);
+        }
+    }
+
+}
