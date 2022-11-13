@@ -26,7 +26,15 @@
 	}
 
 	&__row {
-		margin-bottom: 1em;
+		margin-bottom: 1.25em;
+
+		&_mb0 {
+			margin-bottom: 0;
+		}
+
+		&_mb10 {
+			margin-bottom: 0.625em;
+		}
 
 		.btn,
 		input:not([type]),
@@ -49,18 +57,39 @@
 
 	}
 
-	&__label {}
-
-	&__grup {}
-
-	&__check {
-		display: flex;
-		align-items: center;
+	&__label {
+		margin-bottom: 0.5em;
 
 		span {
-			margin-left: 0.5em;
+			font-size: 0.75em;
 		}
 	}
+
+	&__privacy {
+		line-height: 1.063;
+
+		span {
+			font-size: 0.75em;
+			color: $color_black;
+
+			a {
+				font-size: 1em;
+				text-decoration: none;
+				color: $color_warning;
+			}
+		}
+	}
+
+	// &__grup {}
+	//
+	// &__check {
+	// 	display: flex;
+	// 	align-items: center;
+	//
+	// 	span {
+	// 		margin-left: 0.5em;
+	// 	}
+	// }
 }
 // Input text and textarea ================================================
 input:not([type]),

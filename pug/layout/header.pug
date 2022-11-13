@@ -5,6 +5,46 @@ header.header
                 a.logo.img(href="/")
                     img.desktop(src="/img/logo.svg", alt="alt")
                     img.mobile(src="/img/logo_w.svg", alt="alt")
+
+
+            .header__mobile.mobile
+                .feedback
+                    .feedback__toggle
+                        i.icon_phone
+
+                    .feedback__content
+                        a.feedback__close(href="#")
+                        .feedback__phone
+                            .phone
+                                .header__icon
+                                    i.icon_phone
+                                a(href="tel:+7 (812) 345-54-54") +7 (812) 345-54-54
+                        .feedback__text
+                            span Или вы можете заказать обратный звонок. Напишите нам и мы наш менеджер перезвонит вам в течении 24 часов!
+                        .feedback__form
+                            form.form(action="send.php")
+                                //- из какой формы на сайте
+                                input(type="hidden" name="subject" value="форма в футоре")
+                                //- проверка спама
+                                input(type="hidden" name="notspam" value="")
+
+                                .form__row
+                                    .form__label
+                                        span Введите ваш номер телефона*
+                                    input(type="text", required placeholder="8 (___) ___ ____")
+
+                                .form__row.form__row_mb10
+                                    .button
+                                        button.btn.btn_callback.btn_bg(type="submit")
+                                            span Заказать звонок
+
+                                .form__row.form__row_mb0
+                                    .form__privacy
+                                        span Нажимая на кнопку, вы соглашаетесь  с <br>  <a href="#" target="_blank">политикой конфиденциальности</a>
+
+                a.search__link.mobile(href="")
+                    i.icon_loop
+
             .header__search.desktop
                 .search
                     .search-form__inner
@@ -34,7 +74,14 @@ header.header
                         span Заказать звонок
 
 
-        .header__bottom 
+        .header__bottom
+            .header__item.header__item_bottom.mobile
+                .search
+                    .search-form__inner
+                        form.search-form
+                            input(type="text" placeholder="Введите для поиска").search-form__input
+                            button.btn_search
+                                i.icon_loop
             .header__nav
                 nav.navbar#navbar
                     ul.menu
@@ -90,6 +137,76 @@ header.header
                         li.menu-item
                             a(href="#") Контакты
                                 i.icon_info
+
+            .header__item.header__item_bottom.mobile
+                .phone
+                    .header__icon
+                        i.icon_phone
+                    a(href="tel:+7 (812) 345-54-54") +7 (812) 345-54-54
+                .calback
+                    a(href="#").btn.btn.btn_callback.btn_bg 
+                        span Заказать звонок
+
+            .header__item.header__item_bottom.mobile
+                .info
+                    .info__item
+                        .info__icon
+                            i.icon_clock
+                        .info__label
+                            span ПН-ВС, 8:00 - 22:00
+                    .info__item
+                        .info__icon
+                            i.icon_location
+                        .info__label
+                            span Санкт-Петербург,<br> Орендовского д.353,<br> оф. 4
+                    .info__item
+                        .info__icon
+                            i.icon_mark
+                        .info__label
+                            span ИИН: 910<span></span> 234<span></span> 456 124
+                    .info__item
+                        .info__icon
+                            i.icon_mail
+                        .info__label
+                            a(href="mailto:pochta@primer.ru") Pochta@primer.ru
+
+                .soc
+                    .soc__item
+                        a(href="#").soc__link
+                            i.icon_facebook
+                    .soc__item
+                        a(href="#").soc__link
+                            i.icon_vk
+                    .soc__item
+                        a(href="#").soc__link
+                            i.icon_twiter
+                    .soc__item
+                        a(href="#").soc__link
+                            i.icon_instagram
+
+            .header__item.mobile
+                .payment
+                    .payment__item
+                        .payment__img
+                            img(src="img/pay_header.svg")
+                    .payment__item
+                        .payment__img.payment__img_mastercard.img
+                            img(src="img/mastercard.svg")
+                    .payment__item
+                        .payment__img
+                            img(src="img/visa.svg")
+                    .payment__item
+                        .payment__img
+                            img(src="img/mir.svg")
+
+                .more
+                    .more__item
+                        a(href="#") Политика концендициальности
+                    .more__item
+                        a(href="#") Сообщить об ошибке
+                    .more__item
+                        a(href="#") Политика обработки персональных данных
+
 
 
         .header__toggle

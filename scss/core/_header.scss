@@ -1,11 +1,16 @@
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	@media (max-width: 767px) {
 		background: #0B8EA7;
 		box-shadow: 0 0 4px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.06);
 
 	}
+	background-color: $color_white;
 
 	&__content {
 		@extend .container_center;
@@ -41,6 +46,12 @@
 		}
 	}
 
+	&__mobile {
+		display: flex;
+		margin-right: 3.5em;
+		/* 56/16 */
+	}
+
 	&__search {
 		@media (min-width: 768px) {
 			width: 20.625em;
@@ -49,12 +60,21 @@
 	}
 
 	&__item {
-		display: flex;
-		align-items: center;
+		padding: 1.25em;
 
-		> span {
-			font-weight: 600;
-			font-size: 1.5em;
+		&_bottom {
+			border-bottom: 1px solid rgba(#0B8EA7, 0.2);
+		}
+
+		@media (min-width: 768px) {
+			padding: 0;
+			display: flex;
+			align-items: center;
+
+			> span {
+				font-weight: 600;
+				font-size: 1.5em;
+			}
 		}
 	}
 
@@ -68,6 +88,12 @@
 		border-radius: 50%;
 		background-color: #E6EBEC;
 		margin-right: 0.9375em;
+
+		font-size: 0.7805em;
+		@media (min-width: 768px) {
+			font-size: 1em;
+
+		}
 
 		i {
 			color: $color_info;
@@ -89,24 +115,18 @@
 	}
 
 	&__bottom {
-
 		@media (max-width: 767px) {
-
 			position: fixed;
 			right: -20.5em;
 			top: 0;
 			bottom: 0;
 			background-color: $color_white;
 			width: 20.5em;
-			/* 328/16 */
 			z-index: 10;
 			overflow: hidden;
-			// padding: 5em 1.25em 2em;
-			padding: 5em 0 2em;
+			padding: 2.25em 0 2em;
 			transition: right 0.3s;
-			box-shadow: 0 0 1em rgba(#000, .1);
-
-			height: 100%;
+			height: 100vh;
 			overflow-y: auto;
 
 			&_open {
@@ -115,7 +135,6 @@
 		}
 
 		@media (min-width: 768px) {
-
 			background: #0A8299;
 			box-shadow: 0 0 4px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.06);
 			border-radius: 16px;
@@ -131,7 +150,6 @@
 		@media (max-width: 767px) {
 			top: 1.25em;
 			right: 0.9375em;
-			/* 15/16 */
 			width: 1.25em;
 			height: 0.875em;
 			color: $color_white;
@@ -191,15 +209,74 @@
 		}
 	}
 
+	.phone {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.25em;
+
+		a {
+			text-decoration: none;
+			color: $main_color;
+			font-weight: 600;
+			font-size: 1.25em;
+		}
+	}
+
+	.header__item {
+		.info {
+			margin-bottom: 1.25em;
+
+			.info__item {
+				margin-bottom: 0.625em;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			i {
+				color: $main_color;
+
+			}
+
+			a,
+			span {
+				font-weight: 400;
+			}
+		}
+
+		.soc {
+			.soc__link {
+				color: rgba($main_color,0.4);
+			}
+		}
+
+		.payment {
+			justify-content: flex-start;
+			margin-bottom: 1.25em;
+		}
+
+		.more {
+			.more__item {
+				margin-bottom: 0.9375em;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			a {
+				font-size: 0.75em;
+				color: rgba($main_color, 0.6);
+			}
+		}
+	}
+
 }
 
 .nav-open {
 	overflow: hidden;
 }
-
-// .nav_open_bg {
-// 	background-color: red;
-// }
 
 @media (max-width: 767px) {
 	.nav_open_bg {
@@ -223,4 +300,86 @@
 		}
 	}
 
+}
+
+// stiky menu
+.stiky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+
+	.header__top {
+		@media (min-width: 768px) {
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			font-size: 0.8em;
+		}
+	}
+
+	.header__bottom {
+		// font-size: 0.75em;
+
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+
+	// background-color: $color_dark;
+	// padding: 1em 0;
+
+	// @media (min-width: 768px) {
+	// 	padding: 1em 0 0;
+	//
+	// }
+
+	// .header__bottom {
+	//
+	// 	@media (min-width: 768px) {
+	// 		padding-top: 0;
+	// 		padding-bottom: 0;
+	// 	}
+	//
+	// 	&.open_sub_menu {
+	// 		padding-bottom: 3.125em;
+	// 	}
+	//
+	// }
+
+	// @media (min-width: 768px) {
+	// 	.header__top {
+	// 		display: none;
+	// 	}
+	//
+	// 	.menu {
+	// 		> .menu-item {
+	// 			padding-bottom: 1em;
+	// 		}
+	// 	}
+	//
+	// }
+
+	// .header__toggle {
+	// 	top: 1.2em;
+	// }
+
+	-webkit-animation-name: showMenu;
+	animation-name: showMenu;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@keyframes showMenu {
+	0% {
+		opacity: 0.5;
+		transform: translateY(-4em);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0em);
+	}
 }

@@ -17,6 +17,37 @@
         <div class="header__content">
           <div class="header__top">
             <div class="header__logo"><a class="logo img" href="/"><img class="desktop" src="/img/logo.svg" alt="alt"/><img class="mobile" src="/img/logo_w.svg" alt="alt"/></a></div>
+            <div class="header__mobile mobile">
+              <div class="feedback">
+                <div class="feedback__toggle"><i class="icon_phone"></i></div>
+                <div class="feedback__content"><a class="feedback__close" href="#"></a>
+                  <div class="feedback__phone">
+                    <div class="phone">
+                      <div class="header__icon"><i class="icon_phone"></i></div><a href="tel:+7 (812) 345-54-54">+7 (812) 345-54-54</a>
+                    </div>
+                  </div>
+                  <div class="feedback__text"><span>Или вы можете заказать обратный звонок. Напишите нам и мы наш менеджер перезвонит вам в течении 24 часов!</span></div>
+                  <div class="feedback__form">
+                    <form class="form" action="send.php">
+                      <input type="hidden" name="subject" value="форма в футоре"/>
+                      <input type="hidden" name="notspam" value=""/>
+                      <div class="form__row">
+                        <div class="form__label"><span>Введите ваш номер телефона*</span></div>
+                        <input type="text" required="required" placeholder="8 (___) ___ ____"/>
+                      </div>
+                      <div class="form__row form__row_mb10">
+                        <div class="button">
+                          <button class="btn btn_callback btn_bg" type="submit"><span>Заказать звонок</span></button>
+                        </div>
+                      </div>
+                      <div class="form__row form__row_mb0">
+                        <div class="form__privacy"><span>Нажимая на кнопку, вы соглашаетесь  с <br>  <a href="#" target="_blank">политикой конфиденциальности</a></span></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div><a class="search__link mobile" href=""><i class="icon_loop"></i></a>
+            </div>
             <div class="header__search desktop">
               <div class="search">
                 <div class="search-form__inner">
@@ -42,7 +73,17 @@
               <div class="calback"><a class="btn btn btn_callback btn_bg" href="#"> <span>Заказать звонок</span></a></div>
             </div>
           </div>
-          <div class="header__bottom"> 
+          <div class="header__bottom">
+            <div class="header__item header__item_bottom mobile">
+              <div class="search">
+                <div class="search-form__inner">
+                  <form class="search-form">
+                    <input class="search-form__input" type="text" placeholder="Введите для поиска"/>
+                    <button class="btn_search"><i class="icon_loop"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
             <div class="header__nav">
               <nav class="navbar" id="navbar">
                 <ul class="menu">
@@ -100,6 +141,59 @@
                   <li class="menu-item"><a href="#">Контакты<i class="icon_info"></i></a></li>
                 </ul>
               </nav>
+            </div>
+            <div class="header__item header__item_bottom mobile">
+              <div class="phone">
+                <div class="header__icon"><i class="icon_phone"></i></div><a href="tel:+7 (812) 345-54-54">+7 (812) 345-54-54</a>
+              </div>
+              <div class="calback"><a class="btn btn btn_callback btn_bg" href="#"> <span>Заказать звонок</span></a></div>
+            </div>
+            <div class="header__item header__item_bottom mobile">
+              <div class="info">
+                <div class="info__item">
+                  <div class="info__icon"><i class="icon_clock"></i></div>
+                  <div class="info__label"><span>ПН-ВС, 8:00 - 22:00</span></div>
+                </div>
+                <div class="info__item">
+                  <div class="info__icon"><i class="icon_location"></i></div>
+                  <div class="info__label"><span>Санкт-Петербург,<br> Орендовского д.353,<br> оф. 4</span></div>
+                </div>
+                <div class="info__item">
+                  <div class="info__icon"><i class="icon_mark"></i></div>
+                  <div class="info__label"><span>ИИН: 910<span></span> 234<span></span> 456 124</span></div>
+                </div>
+                <div class="info__item">
+                  <div class="info__icon"><i class="icon_mail"></i></div>
+                  <div class="info__label"><a href="mailto:pochta@primer.ru">Pochta@primer.ru</a></div>
+                </div>
+              </div>
+              <div class="soc">
+                <div class="soc__item"><a class="soc__link" href="#"><i class="icon_facebook"></i></a></div>
+                <div class="soc__item"><a class="soc__link" href="#"><i class="icon_vk"></i></a></div>
+                <div class="soc__item"><a class="soc__link" href="#"><i class="icon_twiter"></i></a></div>
+                <div class="soc__item"><a class="soc__link" href="#"><i class="icon_instagram"></i></a></div>
+              </div>
+            </div>
+            <div class="header__item mobile">
+              <div class="payment">
+                <div class="payment__item">
+                  <div class="payment__img"><img src="img/pay_header.svg"/></div>
+                </div>
+                <div class="payment__item">
+                  <div class="payment__img payment__img_mastercard img"><img src="img/mastercard.svg"/></div>
+                </div>
+                <div class="payment__item">
+                  <div class="payment__img"><img src="img/visa.svg"/></div>
+                </div>
+                <div class="payment__item">
+                  <div class="payment__img"><img src="img/mir.svg"/></div>
+                </div>
+              </div>
+              <div class="more">
+                <div class="more__item"><a href="#">Политика концендициальности</a></div>
+                <div class="more__item"><a href="#">Сообщить об ошибке</a></div>
+                <div class="more__item"><a href="#">Политика обработки персональных данных</a></div>
+              </div>
             </div>
           </div>
           <div class="header__toggle"></div>
@@ -265,7 +359,7 @@
                       <div class="payment__img"><img src="img/pay.svg"/></div>
                     </div>
                     <div class="payment__item">
-                      <div class="payment__img"><img src="img/mastercard.svg"/></div>
+                      <div class="payment__img payment__img_mastercard img"><img src="img/mastercard.svg"/></div>
                     </div>
                     <div class="payment__item">
                       <div class="payment__img"><img src="img/visa.svg"/></div>

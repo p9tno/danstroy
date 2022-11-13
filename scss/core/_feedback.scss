@@ -1,0 +1,115 @@
+.feedback {
+    // position: relative;
+
+    &__toggle {
+        color: $color_white;
+        cursor: pointer;
+        // border: 1px solid #000;
+        // padding: 0.25em 0.5em;
+    }
+
+    &__content {
+        position: absolute;
+        top: 4em;
+        left: 50%;
+
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+
+        background: $color_white;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.06);
+
+        transform: translateY(0.5em)translateX(-50%);
+        width: 21.5625em;
+        padding: 1.25em;
+        border-radius: 1em;
+        z-index: 10;
+        transition: 0.3s;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: -0.625em;
+            left: 14.6em;
+            width: 1.25em;
+            height: 1.25em;
+            background-color: $color_white;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.06);
+            transform: rotate(-45deg);
+            z-index: -1;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 13em;
+            width: 4.5em;
+            height: 1.25em;
+            background-color: $color_white;
+        }
+
+        &_open {
+            height: auto;
+            opacity: 1;
+            transform: translateY(0)translateX(-50%);
+            visibility: visible;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        right: 1.25em;
+        top: 1.25em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color_black;
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            border-top: 0.125em solid;
+        }
+
+        &:before {
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__phone {
+        // padding-bottom: 1.25em;
+        border-bottom: 1px solid rgba(#0B8EA7, 0.2);
+        margin: 0 -1.25em;
+
+        .phone {
+            padding: 0 1.25em;
+        }
+    }
+
+    &__text {
+        padding: 1.25em 0;
+        line-height: 1.4;
+
+        span {
+            font-size: 0.875em;
+        }
+    }
+
+    &__form {}
+
+}

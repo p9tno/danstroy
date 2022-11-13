@@ -21,13 +21,36 @@ $(document).ready(function() {
     function openMobileNav() {
         $('.header__toggle').click(function(event) {
             // console.log('Показ меню');
-            $('.header__bottom ').toggleClass('header__bottom_open ');
+            $('.header__bottom ').toggleClass('header__bottom_open');
             $('.header__toggle').toggleClass('header__toggle_open');
             $('.nav_open_bg').toggleClass('nav_open_bg_open');
             $( 'body' ).toggleClass( 'nav-open' );
+            $('.feedback__content').removeClass('feedback__content_open');
         });
     };
     openMobileNav();
+
+    function toggleFeedback() {
+        $('.feedback__toggle').click(function() {
+            $('.feedback__content').toggleClass('feedback__content_open');
+        });
+
+        $('.feedback__close').click(function(event) {
+            event.preventDefault();
+            $('.feedback__content').removeClass('feedback__content_open');
+        });
+
+        // $(document).mouseup(function (e) {
+        //     let div = $(".feedback__content");
+        //     // если клик был не по нашему блоку и не по его дочерним элементам
+        //     if (!div.is(e.target) && div.has(e.target).length === 0) {
+        //         div.removeClass('feedback__content_open');
+        //         console.log('click');
+        //     }
+        // });
+    };
+    toggleFeedback();
+
 
     $('.modal').on('show.bs.modal', () => {
         let openedModal = $('.modal.in:not(.popapCalc)');
@@ -132,10 +155,14 @@ $(document).ready(function() {
     doDrop();
 
 
-    // Stiky menu // Липкое меню. При прокрутке к элементу #header добавляется класс .stiky который и стилизуем
     function stikyMenu() {
-        let HeaderTop = $( 'header' ).offset().top;
-        // let HeaderTop = $( 'header' ).offset().top + $( '.home' ).innerHeight();
+
+        // let HeaderTop = $( '.header__bottom' ).offset().top;
+
+        // let HeaderTop = $( '.header__bottom' ).offset().top;
+        // let HeaderTop = $( 'header' ).offset().top + $( '.section' ).innerHeight();
+        let HeaderTop = $('.header' ).innerHeight();
+        // console.log(HeaderTop);
         let currentTop = $( window ).scrollTop();
 
         setNavbarPosition();
@@ -149,27 +176,15 @@ $(document).ready(function() {
 
             if ( currentTop > HeaderTop ) {
                 $( 'header' ).addClass( 'stiky' );
+
             } else {
                 $( 'header' ).removeClass( 'stiky' );
             }
 
-            // $( '.navbar__link' ).each( function () {
-            //     let section = $( this ).attr( 'href' );
-            //
-            //     if ( $( 'section' ).is( section ) ) {
-            //         let offset = $( section ).offset().top;
-            //
-            //         if ( offset <= currentTop && offset + $( section ).innerHeight() > currentTop ) {
-            //             $( this ).addClass( 'active' );
-            //         } else {
-            //             $( this ).removeClass( 'active' );
-            //         }
-            //     }
-            // } );
         }
-    stikyMenu();
+    };
 
-    }
+    stikyMenu();
 
     // start animate numbers
 
