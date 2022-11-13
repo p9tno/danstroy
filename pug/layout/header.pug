@@ -3,8 +3,9 @@ header.header
         .header__top
             .header__logo
                 a.logo.img(href="/")
-                    img(src="/img/logo.svg", alt="alt")
-            .header__search
+                    img.desktop(src="/img/logo.svg", alt="alt")
+                    img.mobile(src="/img/logo_w.svg", alt="alt")
+            .header__search.desktop
                 .search
                     .search-form__inner
                         form.search-form
@@ -12,22 +13,22 @@ header.header
                             button.btn_search
                                 i.icon_loop
 
-            .header__item
+            .header__item.desktop
                 .header__icon
                     i.icon_location
                 .header__text
                     span Работаем в Санкт- <br>Петербурге и области
-            .header__item
+            .header__item.desktop
                 .header__icon
                     i.icon_clock
                 .header__text
                     span 8:00 - 22:00
                     span пн-вс
-            .header__item
+            .header__item.desktop
                 .header__icon
                     i.icon_phone
                 span +7 (812) 345-54-54
-            .header__item
+            .header__item.desktop
                 .calback
                     a(href="#").btn.btn.btn_callback.btn_bg 
                         span Заказать звонок

@@ -21,7 +21,7 @@ $(document).ready(function() {
     function openMobileNav() {
         $('.header__toggle').click(function(event) {
             // console.log('Показ меню');
-            $('.navbar').toggleClass('navbar_open');
+            $('.header__bottom ').toggleClass('header__bottom_open ');
             $('.header__toggle').toggleClass('header__toggle_open');
             $('.nav_open_bg').toggleClass('nav_open_bg_open');
             $( 'body' ).toggleClass( 'nav-open' );
@@ -52,7 +52,7 @@ $(document).ready(function() {
             // console.log(dropBox);
             // dropBox.slideDown();
             dropBox.toggleClass('open');
-            
+
         });
     }
     openDropMenu();
