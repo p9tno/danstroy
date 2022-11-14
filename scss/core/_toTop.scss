@@ -15,22 +15,30 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 3.125em;
-        height: 3.125em;
-        border-radius: 0.0625em;
-        background-color: $color_warning;
+        width: 4.125em;
+        height: 4.125em;
+        border-radius: 1em;
+        background: linear-gradient(223.85deg, rgba(255, 255, 255, 0.156) -1.93%, rgba(255, 255, 255, 0) 35.96%), #48A7B9;
         color: $color_white;
         font-size: 0.75em;
+        cursor: pointer;
+
+        transition: 0.3s;
 
         @media (min-width: 768px) {
             font-size: 1em;
 
         }
 
+        &:hover {
+            background: linear-gradient(223.85deg, rgba(255, 255, 255, 0.156) -1.93%, rgba(255, 255, 255, 0) 35.96%), #5EC3D7;
+
+        }
+
     }
 
     i {
-        font-size: 1.25em;
+        font-size: 1.125em;
         -webkit-animation: action 0.5s linear alternate infinite;
         animation: action 0.5s linear alternate infinite;
     }
@@ -39,11 +47,10 @@
 
 @keyframes action {
     0% {
-        transform: translateY(-2px);
+        transform: translateY(-0.0625em);
     }
 
     100% {
-        transform: translateY(2px);
-
+        transform: translateY(0.0625em);
     }
 }

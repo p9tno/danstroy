@@ -9,6 +9,9 @@
 @import 'core/header';
 @import 'core/navbar';
 
+@import 'section/firstscreen';
+@import 'section/services';
+
 @import 'core/footer';
 
 @import 'core/form';
@@ -19,11 +22,11 @@
 
 @import 'core/buttons';
 
-@import 'core/video';
-@import 'core/collapse';
-@import 'core/tabs';
-@import 'core/drop';
-@import 'core/programsInfo';
+// @import 'core/video';
+// @import 'core/collapse';
+// @import 'core/tabs';
+// @import 'core/drop';
+// @import 'core/programsInfo';
 @import 'core/toTop';
 @import 'core/preloader';
 @import 'core/search';
@@ -34,4 +37,4 @@
 @import 'core/feedback';
 
 @import 'vendor/modal';
-@import 'vendor/slick';
+@import 'vendor/swiper';

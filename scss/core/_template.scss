@@ -3,6 +3,7 @@
 body {
 	font-family: $main_font_family;
 	color: $main_color;
+	background-color: #F4F4F4;
 	line-height: $main_line_height;
 	font-size: calc(.0426666 * 100vw + 0px);
 
@@ -40,13 +41,46 @@ body {
 	padding: 2em 0;
 
 	&:first-child {
-		padding-top: 12.75em;
-		/* 204/16 */
+		padding-top: 4.375em;
+		@media (min-width: 768px) {
+			padding-top: 13.75em;
+
+		}
 	}
 
 	&__title {
 		font-family: $main_font_family;
-		font-weight: 400;
+		font-size: 1em;
+		margin: 0;
+		line-height: 1.1;
+
+		span {
+			color: #222424;
+			font-weight: 600;
+			font-size: 2em;
+			@media (min-width: 768px) {
+				font-size: 2.25em;
+
+			}
+		}
+
+	}
+
+	&__content {
+		line-height: 1.5;
+
+		p {
+			font-size: 1em;
+			margin: 1.2em 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 

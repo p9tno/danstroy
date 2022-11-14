@@ -1,20 +1,58 @@
+var app = {
+    pageScroll: '',
+    lgWidth: 1200,
+    mdWidth: 992,
+    smWidth: 768,
+    resized: false,
+    iOS: function () {
+        return navigator.userAgent.match( /iPhone|iPad|iPod/i );
+    },
+    touchDevice: function () {
+        return navigator.userAgent.match( /iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i );
+    }
+};
+
+function isLgWidth() {
+    return $( window ).width() >= app.lgWidth;
+} // >= 1200
+function isMdWidth() {
+    return $( window ).width() >= app.mdWidth && $( window ).width() < app.lgWidth;
+} //  >= 992 && < 1200
+function isSmWidth() {
+    return $( window ).width() >= app.smWidth && $( window ).width() < app.mdWidth;
+} // >= 768 && < 992
+function isXsWidth() {
+    return $( window ).width() < app.smWidth;
+} // < 768
+function isIOS() {
+    return app.iOS();
+} // for iPhone iPad iPod
+function isTouch() {
+    return app.touchDevice();
+} // for touch device
+
+isLgWidth();
+
+
+
+
 $(document).ready(function() {
 
-    // function preloader() {
-    //     $(()=>{
+    function preloader() {
+        $(()=>{
 
-    //         setTimeout( () => {
-    //             let p = $('#preloader');
-    //             p.addClass('hide');
+            setTimeout( () => {
+                let p = $('#preloader');
+                p.addClass('hide');
 
-    //             setTimeout( () => {
-    //                 p.remove()
-    //             },1000);
+                setTimeout( () => {
+                    p.remove()
+                },1000);
 
-    //         },1000);
-    //     });
-    // }
-    // preloader();
+            },1000);
+        });
+    }
+    preloader();
     // setTimeout( ()=> preloader(),15000 )
 
 
@@ -185,6 +223,33 @@ $(document).ready(function() {
     };
 
     stikyMenu();
+
+
+    // scrollTop
+    $(document).ready(function(){
+        //отменяем стандартную обработку нажатия по ссылке
+        $(".toTop").on("click","a", function (event) {
+            event.preventDefault();
+            //забираем идентификатор блока с атрибута href
+            let id  = $(this).attr('href'),
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+    });
+
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(window).scrollTop()>500){
+                $('.toTop').fadeIn(900)
+            }else{
+                $('.toTop').fadeOut(700)
+            }
+        });
+    });
+
+    // end scrollTop
 
     // start animate numbers
 

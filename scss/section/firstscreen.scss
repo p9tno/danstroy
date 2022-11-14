@@ -1,0 +1,134 @@
+.firstscreen {
+    .section__title {
+        @media (min-width: 768px) {
+            width: 43.75em;
+        }
+    }
+
+    .single__dotted {
+        margin-top: 0.625em;
+        justify-content: center;
+        @media (min-width: 768px) {
+            margin-top: 1.875em;
+
+        }
+    }
+
+    &__wrap {
+        @media (min-width: 768px) {
+            position: relative;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__bg {
+        position: relative;
+        overflow: hidden;
+        border-radius: 1em;
+        min-height: 26.625em;
+        padding: 3em 2.25em;
+
+        @media (min-width: 768px) {
+            // min-height: 26.625em;
+            padding: 7.0625em 4.1875em 7.75em;
+
+        }
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+
+        }
+
+        &:before {
+            width: 100%;
+            left: 0;
+            background: linear-gradient(180deg, rgba(38, 52, 62, 0.55) 0%, rgba(38, 52, 62, 0) 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+
+            top: -8em;
+            height: 11.25em;
+            @media (min-width: 768px) {
+                top: -9em;
+                height: 14.125em;
+
+            }
+        }
+
+        &:after {
+            top: 0;
+            left: 0;
+            background: linear-gradient(77.32deg, rgba(253, 255, 254, 0.66) -4%, rgba(253, 255, 254, 0) 59.32%);
+            opacity: 0.45;
+
+            width: 100%;
+            height: 100%;
+
+            @media (min-width: 768px) {
+                width: 42.125em;
+                bottom: 0;
+
+            }
+        }
+
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 1em;
+        line-height: 1.1;
+
+        @media (min-width: 768px) {
+            width: 43.75em;
+            line-height: 1.091;
+        }
+
+        span {
+            font-size: 1.875em;
+            font-weight: 600;
+
+            @media (min-width: 768px) {
+                font-size: 2.75em;
+
+            }
+        }
+    }
+
+    &__action {
+        margin-top: 1.875em;
+        @media (min-width: 768px) {
+            margin-top: 3em;
+
+        }
+    }
+
+    &__el {
+        @media (min-width: 768px) {
+            position: absolute;
+            z-index: 1;
+
+            &_1 {
+                top: -3.5em;
+                right: 3.5em;
+                width: 8.75em;
+                height: 8.5em;
+                background-image: url("../img/firstscreen_el_1.webp");
+            }
+
+            &_2 {
+                bottom: -6em;
+                right: 7em;
+                width: 16.6875em;
+                height: 18.25em;
+                background-image: url("../img/firstscreen_el_2.webp");
+            }
+        }
+
+    }
+
+}
