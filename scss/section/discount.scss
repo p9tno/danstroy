@@ -1,0 +1,217 @@
+.discount {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .section__title {
+        span {
+
+            color: $color_white;
+        }
+    }
+
+    position: relative;
+    margin: 2em 0;
+
+    @media (max-width: 767px) {
+        background-image: url("../img/discount_bg_m.svg");
+    }
+    @media (min-width: 768px) {
+        background-color: #0A8299;
+    }
+
+    &__wrap {
+        overflow: hidden;
+        position: relative;
+
+        padding-top: 1em;
+        padding-bottom: 3.125em;
+
+        @media (min-width: 768px) {
+            padding-top: 9.75em;
+            padding-bottom: 12.25em;
+
+            min-height: 36.25em;
+
+        }
+
+    }
+
+    &__number {
+        width: 57.5em;
+        height: 29.5em;
+
+        font-size: 0.375em;
+
+        @media (min-width: 768px) {
+            font-size: 1em;
+            width: 57.5em;
+            height: 29.5em;
+
+            position: absolute;
+
+            top: 50%;
+            transform: translateY(-50%);
+            left: 1em;
+
+        }
+
+        &_1 {
+            font-size: 0.5em;
+            background-image: url("../img/1.webp");
+            @media (min-width: 768px) {
+                left: 6em;
+                font-size: 1em;
+            }
+        }
+
+        &_3 {
+            font-size: 0.5em;
+            background-image: url("../img/3.webp");
+            @media (min-width: 768px) {
+                left: 6em;
+                font-size: 1em;
+            }
+        }
+
+        &_5 {
+            font-size: 0.5em;
+            background-image: url("../img/5.webp");
+            @media (min-width: 768px) {
+                left: 6em;
+                font-size: 1em;
+            }
+        }
+
+        &_10 {
+            background-image: url("../img/10.webp");
+        }
+
+        &_15 {
+            background-image: url("../img/15.webp");
+        }
+
+        &_20 {
+            background-image: url("../img/20.webp");
+        }
+
+        &_25 {
+            background-image: url("../img/25.webp");
+        }
+
+        &_30 {
+            background-image: url("../img/30.webp");
+        }
+
+        &_35 {
+            background-image: url("../img/35.webp");
+        }
+
+        &_40 {
+            background-image: url("../img/40.webp");
+        }
+
+        &_45 {
+            background-image: url("../img/45.webp");
+        }
+
+        &_50 {
+            background-image: url("../img/50.webp");
+        }
+
+    }
+
+    &__content {
+        color: $color_white;
+        @media (min-width: 768px) {
+            margin-left: auto;
+            width: 34em;
+        }
+    }
+
+    &__label {
+        margin-top: 1.875em;
+        margin-bottom: 3.125em;
+
+        span {
+            font-size: 1em;
+        }
+    }
+
+    &__action {}
+
+    @media (min-width: 768px) {
+        &__circle {
+            position: absolute;
+        }
+
+        &__circle_left {
+            top: 0;
+            left: 0;
+            width: 8.125em;
+            height: 17.375em;
+
+            background-image: url("../img/circle_left.svg");
+        }
+
+        &__circle_center {
+            top: -23em;
+            right: -37.5em;
+
+            width: 82em;
+            height: 82em;
+            border-radius: 50%;
+            border: 1px solid rgba($color_white,0.2);
+        }
+
+        &__circle_right {
+            bottom: 0;
+            right: 0;
+            width: 18.4375em;
+            height: 15em;
+            background-image: url("../img/circle_right.svg");
+        }
+    }
+
+    &__sheet {
+        position: absolute;
+    }
+
+    &__sheet_1 {
+        width: 11.4375em;
+        height: 12.5em;
+        background-image: url("../img/sheet_1.webp");
+        font-size: 0.4em;
+        top: -5em;
+        left: -3em;
+        @media (min-width: 768px) {
+            font-size: 1em;
+            top: -4em;
+            left: 12em;
+        }
+
+    }
+
+    &__sheet_2 {
+        @media (min-width: 768px) {
+            width: 8.375em;
+            height: 8.75em;
+            background-image: url("../img/sheet_2.webp");
+            font-size: 1em;
+            bottom: 3em;
+            left: 50em;
+        }
+    }
+
+    &__sheet_3 {
+        @media (min-width: 768px) {
+            width: 16.25em;
+            height: 17em;
+            background-image: url("../img/sheet_3.webp");
+
+            font-size: 1em;
+            top: -6em;
+            right: 2em;
+        }
+    }
+
+}
