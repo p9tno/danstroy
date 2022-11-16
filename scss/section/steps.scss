@@ -1,0 +1,117 @@
+.steps {
+    padding-top: 3.125em;
+    @media (min-width: 768px) {
+        padding-top: 6.25em;
+        padding-bottom: 6.875em;
+    }
+
+    &__list {
+        margin-top: 1.875em;
+        @media (min-width: 768px) {
+            margin-top: 4.375em;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        margin-bottom: 1.875em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+            width: 22.5em;
+        }
+
+        &:nth-child(1) {
+            .steps__img {
+                width: 5.4375em;
+            }
+        }
+
+        &:nth-child(2) {
+            .steps__img {
+                width: 5.625em;
+
+                &:after {
+                    background-image: url("../img/arrow_step_top.svg");
+
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            .steps__img {
+                width: 5.625em;
+            }
+        }
+
+        &:nth-child(4) {
+            .steps__img {
+                width: 5.875em;
+
+                &:after {
+                    content: none;
+
+                }
+            }
+        }
+
+    }
+
+    &__img {
+        height: 5.875em;
+        margin: 0 auto 1.25em;
+
+        @media (min-width: 768px) {
+            margin: 0 0 1.25em;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+
+                top: 1.5em;
+                right: -16em;
+
+                width: 14.125em;
+                height: 2.75em;
+                background-image: url("../img/arrow_step_bottom.svg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &:nth-child(1) {
+            width: 5.4375em;
+        }
+
+        &:nth-child(2) {
+            width: 5.625em;
+        }
+
+        &:nth-child(2) {
+            width: 5.625em;
+
+        }
+
+        &:nth-child(4) {
+            width: 5.875em;
+        }
+    }
+
+    &__text {
+        line-height: 1.5;
+        width: 16em;
+        text-align: center;
+        margin: 0 auto;
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+    }
+
+}

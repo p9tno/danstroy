@@ -1,4 +1,12 @@
 .about {
+    background-color: $color_white;
+    padding-top: 3.125em;
+
+    @media (min-width: 768px) {
+        padding-top: 6em;
+        padding-bottom: 3.125em;
+    }
+
     &__content {
         margin-top: 1.25em;
         @media (min-width: 768px) {

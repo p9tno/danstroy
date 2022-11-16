@@ -1,0 +1,118 @@
+.ourwork {
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        padding-bottom: 7.125em;
+    }
+
+    &__content {}
+
+    &__left {
+        margin-bottom: 3.125em;
+
+        @media (min-width: 768px) {
+            width: 55.625em;
+        }
+
+        .section__content {
+            margin-top: 1.25em;
+            @media (min-width: 768px) {
+                margin-top: 2.1875em;
+            }
+        }
+    }
+
+    &__lider {
+        margin-top: 1.25em;
+        @media (min-width: 768px) {
+            margin-top: 4.1875em;
+        }
+    }
+
+    &__action {
+        margin-top: 1.875em;
+
+    }
+
+    &__right {
+        position: relative;
+        font-size: 0.4957em;
+        bottom: -1.125em;
+        @media (min-width: 768px) {
+            font-size: 1em;
+            position: absolute;
+            bottom: -1.5em;
+            right: 5em;
+        }
+    }
+
+    &__bg {
+        position: relative;
+        width: 43.375em;
+        height: 43.375em;
+        background-image: url("../img/ourwork_bg.webp");
+    }
+
+    &__el {
+        position: absolute;
+
+        &_1 {
+            top: -1em;
+            right: 7em;
+            width: 6.75em;
+            height: 7.0625em;
+            background-image: url("../img/ourwork_el_1.webp");
+
+        }
+
+        &_2 {
+            bottom: 1em;
+            left: -3em;
+            width: 17.5em;
+            height: 18.375em;
+            background-image: url("../img/ourwork_el_2.webp");
+
+        }
+
+        &_3 {
+            bottom: 13.5em;
+            right: 0;
+            width: 7.125em;
+            height: 8.3125em;
+            background-image: url("../img/ourwork_el_3.webp");
+
+        }
+    }
+
+}
+
+.lider {
+    line-height: 1.5;
+
+    &__name {
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__info {
+        span {
+            color: rgba($main_color, 0.6);
+        }
+    }
+
+    &__foto {
+        position: absolute;
+        top: -2.5em;
+        left: 6em;
+
+        width: 33.75em;
+        height: 44.75em;
+    }
+
+}

@@ -90,20 +90,32 @@ $(document).ready(function() {
     toggleFeedback();
 
 
+    // $('.modal').on('show.bs.modal', () => {
+    //     let openedModal = $('.modal.in:not(.popapCalc)');
+    //     if (openedModal.length > 0) {
+    //         openedModal.modal('hide');
+    //     }
+    // });
+
+    function showModal() {
+        $('.show_js').on('click', function (e) {
+            e.preventDefault();
+            let id  = $(this).attr('href');
+
+            $(id).modal('show');
+        });
+    }
+    showModal();
+
     $('.modal').on('show.bs.modal', () => {
-        let openedModal = $('.modal.in:not(.popapCalc)');
+        // let openedModal = $('.modal.in:not(.popapCalc)');
+        let openedModal = $('.modal');
         if (openedModal.length > 0) {
             openedModal.modal('hide');
         }
     });
 
-    function activeNav() {
-        $('.menu-item').on('click', function() {
-            $('.menu-item').removeClass('current-menu-item');
-            $(this).addClass('current-menu-item');
-        })
-    };
-    activeNav();
+
 
     function openDropMenu(){
         $('.footer__nav .icon_arrow_bottom').on('click', function (e) {

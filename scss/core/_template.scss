@@ -38,7 +38,12 @@ body {
 }
 
 .section {
-	padding: 2em 0;
+	padding: 1.5625em 0;
+	/* 25/16 */
+	@media (min-width: 768px) {
+		padding: 1.25em 0;
+
+	}
 
 	&:first-child {
 		padding-top: 4.375em;
@@ -85,6 +90,24 @@ body {
 		ul {
 			padding: 0 0 0 1em;
 			margin: 1.2em 0;
+			list-style: none;
+
+			li {
+				position: relative;
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					transform: translateY(-25%);
+					left: -1em;
+
+					width: 0.25em;
+					height: 0.25em;
+					border-radius: 50%;
+					background-color: $main_color;
+				}
+			}
 		}
 	}
 }

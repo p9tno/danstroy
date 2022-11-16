@@ -2,7 +2,6 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    // background-color: rgb(23, 24, 28);
     background-color: $color_white;
     z-index: 30;
 
@@ -20,6 +19,11 @@
     .ap {
         width: 8em;
         height: 16em;
+        font-size: 0.6em;
+        @media (min-width: 768px) {
+            font-size: 1em;
+
+        }
     }
 
     .ap__ring {

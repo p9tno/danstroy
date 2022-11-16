@@ -9,6 +9,11 @@
         }
     }
 
+    padding-bottom: 3.125em;
+    @media (min-width: 768px) {
+        padding-bottom: 6.875em;
+    }
+
     &__list {
         margin-top: 1.875em;
         @media (min-width: 768px) {

@@ -1,7 +1,4 @@
 .discount {
-    padding-top: 0;
-    padding-bottom: 0;
-
     .section__title {
         span {
 
@@ -10,7 +7,8 @@
     }
 
     position: relative;
-    margin: 2em 0;
+    padding-top: 0;
+    padding-bottom: 0;
 
     @media (max-width: 767px) {
         background-image: url("../img/discount_bg_m.svg");
