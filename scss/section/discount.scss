@@ -35,86 +35,100 @@
     }
 
     &__number {
-        width: 57.5em;
-        height: 29.5em;
-
+        // width: 57.5em;
+        // height: 29.5em;
+        //
         font-size: 0.375em;
 
         @media (min-width: 768px) {
             font-size: 1em;
-            width: 57.5em;
-            height: 29.5em;
+            // width: 57.5em;
+            // height: 29.5em;
 
             position: absolute;
 
             top: 50%;
-            transform: translateY(-50%);
+            // transform: translateY(-50%);
+            transform: translateY(-54%);
+            // left: 1em;
+            left: 6em;
+
+        }
+
+        &_left {
+            @media (max-width: 767px) {}
             left: 1em;
 
         }
 
-        &_1 {
-            font-size: 0.5em;
-            background-image: url("../img/1.webp");
-            @media (min-width: 768px) {
-                left: 6em;
-                font-size: 1em;
+        &.big_number {
+            @media (max-width: 767px) {
+                font-size: 0.5em;
             }
         }
 
-        &_3 {
-            font-size: 0.5em;
-            background-image: url("../img/3.webp");
-            @media (min-width: 768px) {
-                left: 6em;
-                font-size: 1em;
-            }
-        }
-
-        &_5 {
-            font-size: 0.5em;
-            background-image: url("../img/5.webp");
-            @media (min-width: 768px) {
-                left: 6em;
-                font-size: 1em;
-            }
-        }
-
-        &_10 {
-            background-image: url("../img/10.webp");
-        }
-
-        &_15 {
-            background-image: url("../img/15.webp");
-        }
-
-        &_20 {
-            background-image: url("../img/20.webp");
-        }
-
-        &_25 {
-            background-image: url("../img/25.webp");
-        }
-
-        &_30 {
-            background-image: url("../img/30.webp");
-        }
-
-        &_35 {
-            background-image: url("../img/35.webp");
-        }
-
-        &_40 {
-            background-image: url("../img/40.webp");
-        }
-
-        &_45 {
-            background-image: url("../img/45.webp");
-        }
-
-        &_50 {
-            background-image: url("../img/50.webp");
-        }
+        // &_1 {
+        //     font-size: 0.5em;
+        //     background-image: url("../img/1.webp");
+        //     @media (min-width: 768px) {
+        //         left: 6em;
+        //         font-size: 1em;
+        //     }
+        // }
+        //
+        // &_3 {
+        //     font-size: 0.5em;
+        //     background-image: url("../img/3.webp");
+        //     @media (min-width: 768px) {
+        //         left: 6em;
+        //         font-size: 1em;
+        //     }
+        // }
+        //
+        // &_5 {
+        //     font-size: 0.5em;
+        //     background-image: url("../img/5.webp");
+        //     @media (min-width: 768px) {
+        //         left: 6em;
+        //         font-size: 1em;
+        //     }
+        // }
+        //
+        // &_10 {
+        //     background-image: url("../img/10.webp");
+        // }
+        //
+        // &_15 {
+        //     background-image: url("../img/15.webp");
+        // }
+        //
+        // &_20 {
+        //     background-image: url("../img/20.webp");
+        // }
+        //
+        // &_25 {
+        //     background-image: url("../img/25.webp");
+        // }
+        //
+        // &_30 {
+        //     background-image: url("../img/30.webp");
+        // }
+        //
+        // &_35 {
+        //     background-image: url("../img/35.webp");
+        // }
+        //
+        // &_40 {
+        //     background-image: url("../img/40.webp");
+        // }
+        //
+        // &_45 {
+        //     background-image: url("../img/45.webp");
+        // }
+        //
+        // &_50 {
+        //     background-image: url("../img/50.webp");
+        // }
 
     }
 

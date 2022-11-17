@@ -1,12 +1,16 @@
 // Breadcrumb ==================================================================
 
 .breadcrumbs {
-	padding-top: 4.5em!important;
-	padding-bottom: 0;
-
+	padding-top: 5.35em!important;
+	padding-bottom: 2.5em;
+	line-height: 1.1;
+	font-size: 0.75em;
 	@media (min-width: 768px) {
-		padding-top: 14.5em!important;
-
+		line-height: $main_line_height;
+		padding-top: 13em!important;
+		padding-bottom: 0.75em;
+		/* 12/16 */
+		font-size: 1em;
 	}
 
 	.kama_breadcrumbs {
@@ -16,15 +20,12 @@
 
 		a,
 		span {
-			color: #B3B3B3;
+			color: rgba($main_color, 0.6);
+			/* 12/16 */
+			@media (min-width: 768px) {}
 		}
 
 		span {
-			font-size: 0.6em;
-			@media (min-width: 768px) {
-				font-size: 0.875em;
-			}
-
 			> a {
 				> span {
 					font-size: 1em;
@@ -35,42 +36,18 @@
 		.kb_sep {
 			transform: translateY(-0.15em);
 			display: inline-block;
-			margin: 0 0.75em;
-
-			width: 0.3125em;
-			height: 0.3125em;
-			background-color: $color_warning;
-			font-size: 0.6em;
-			@media (min-width: 768px) {
-				font-size: 1em;
-
-			}
-
+			margin: 0 0.375em;
+			width: 0.25em;
+			height: 0.25em;
+			background-color: rgba($main_color, 0.6);
+			border-radius: 50%;
+			font-size: 1em;
 		}
 
-		.kb_title {
-			color: $main_color;
-			font-weight: 600;
-		}
-
-	}
-
-	&_reverse {
-		position: absolute;
-		top: 0.5em;
-		left: 0;
-		width: 100%;
-		z-index: 3;
-		@media (min-width: 768px) {
-			top: 0;
-
-		}
-
-		.kama_breadcrumbs {
-			.kb_title {
-				color: $color_white;
-			}
-		}
+		// .kb_title {
+		// 	color: $main_color;
+		// 	font-weight: 600;
+		// }
 
 	}
 

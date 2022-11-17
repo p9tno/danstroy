@@ -1,0 +1,208 @@
+.stock {
+    &__grid {
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-auto-rows: minmax(15.5em, auto);
+
+            grid-gap: 1.875em;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__item {
+        position: relative;
+        border-radius: 1em;
+        overflow: hidden;
+        padding: 2.4375em 2.25em 2.9375em 3.5625em;
+        font-size: 0.523em;
+        margin-bottom: 2em;
+        // min-height: 15.55em;
+        @media (min-width: 768px) {
+            font-size: 1em;
+            margin-bottom: 0;
+            // min-height: inherit;
+
+        }
+
+    }
+
+    &__item_number {
+        padding-top: 3.875em;
+
+        .stock__content {
+            margin-left: auto;
+        }
+
+        &_reverse {
+            .stock__content {
+                margin-left: 0;
+            }
+
+            .stock__number {
+                left: auto;
+                right: 6em;
+            }
+        }
+
+    }
+
+    &__item_img {
+        .stock__content {
+            margin-left: auto;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        // border: 1px solid #000;
+        top: 0;
+        left: -3em;
+        width: 17.75em;
+        width: 17.9375em;
+        height: 15.5em;
+        /* 248/16 */
+        /* 287/16 */
+        // height: 100%;
+
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (min-width: 768px) {
+            left: 0;
+        }
+    }
+
+    &__content {
+        color: $color_white;
+        width: 21.875em;
+    }
+
+    &__title {
+        line-height: 1.1;
+        margin-bottom: 1.0625em;
+
+        span {
+            font-size: 1.5em;
+            @media (min-width: 768px) {}
+
+        }
+    }
+
+    &__desc {
+        span {
+            font-size: 0.875em;
+        }
+    }
+
+    &__action {
+        margin-top: 1.6875em;
+    }
+
+    &__number {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 9em;
+        font-size: 0.25em;
+        @media (min-width: 768px) {
+            font-size: 0.34em;
+
+        }
+
+    }
+
+    .btn {
+        width: auto;
+    }
+
+}
+
+.stock {
+    &__item {
+        background-image: url("../img/stock_main.svg");
+
+        &.stock_blue {
+            background-image: url("../img/stock_blue.svg");
+        }
+
+        &.stock_coral {
+            background-image: url("../img/stock_coral.svg");
+        }
+
+        &.stock_darkblue {
+            background-image: url("../img/stock_darkblue.svg");
+        }
+
+        &.stock_green {
+            background-image: url("../img/stock_green.svg");
+        }
+
+        &.stock_orange {
+            background-image: url("../img/stock_orange.svg");
+        }
+
+        &.stock_pink {
+            background-image: url("../img/stock_pink.svg");
+        }
+
+        &.stock_teal {
+            background-image: url("../img/stock_teal.svg");
+        }
+
+        &.stock_bg {
+            background-image: url("../img/stock_bg.jpg");
+
+        }
+    }
+
+}
+
+// .stock {
+//     .stock__img_number {
+//         background-image: url("../img/1.webp");
+//
+//         &.num_5 {
+//             background-image: url("../img/5.webp");
+//         }
+//
+//         &.num_10 {
+//             background-image: url("../img/10.webp");
+//         }
+//
+//         &.num_15 {
+//             background-image: url("../img/15.webp");
+//         }
+//
+//         &.num_20 {
+//             background-image: url("../img/20.webp");
+//         }
+//
+//         &.num_25 {
+//             background-image: url("../img/25.webp");
+//         }
+//
+//         &.num_30 {
+//             background-image: url("../img/30.webp");
+//         }
+//
+//         &.num_35 {
+//             background-image: url("../img/35.webp");
+//         }
+//
+//         &.num_40 {
+//             background-image: url("../img/40.webp");
+//         }
+//
+//         &.num_45 {
+//             background-image: url("../img/45.webp");
+//         }
+//
+//         &.num_50 {
+//             background-image: url("../img/50.webp");
+//         }
+//
+//     }
+//
+// }

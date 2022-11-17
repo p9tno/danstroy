@@ -268,7 +268,7 @@ $(document).ready(function() {
     function onVisible( selector, callback, repeat = false ) {
 
     let options = {
-        threshold: [ 0.5 ]
+        threshold: [ 0.1 ]
     };
     let observer = new IntersectionObserver( onEntry, options );
     let elements = document.querySelectorAll( selector );
@@ -292,15 +292,16 @@ $(document).ready(function() {
     }
     }
 
-    onVisible( '.programsInfo__number', function ( e ) {
+    onVisible( '.number_js', function ( e ) {
         animateNumber( e, e.innerHTML );
+        console.log('start');
     } );
 
     function animateNumber( elem, final, duration = 1000 ) {
         let start = 0;
         // console.log('init');
         setInterval( function () {
-            if ( final > start ) {
+            if ( final >= start ) {
                 elem.innerHTML = start++;
             }
         }, duration / final );

@@ -39,10 +39,8 @@ body {
 
 .section {
 	padding: 1.5625em 0;
-	/* 25/16 */
 	@media (min-width: 768px) {
 		padding: 1.25em 0;
-
 	}
 
 	&:first-child {
@@ -63,10 +61,29 @@ body {
 			color: #222424;
 			font-weight: 600;
 			font-size: 2em;
+
 			@media (min-width: 768px) {
 				font-size: 2.25em;
 
 			}
+		}
+
+		&_lg {
+			margin-bottom: 1.25em;
+
+			@media (min-width: 768px) {
+				margin-bottom: 3.125em;
+			}
+
+			span {
+				font-weight: 400;
+				font-size: 2.375em;
+				@media (min-width: 768px) {
+					font-size: 2.75em;
+
+				}
+			}
+
 		}
 
 	}
@@ -200,6 +217,61 @@ body {
 			content: counter(line) ' ';
 		}
 
+	}
+}
+
+.number {
+	position: relative;
+
+	i {
+		line-height: 0.8;
+		position: absolute;
+		bottom: -0.035em;
+		right: -0.035em;
+		color: transparent;
+		font-style: normal;
+		font-size: 26.75em;
+		font-weight: 800;
+		z-index: -1;
+		-webkit-text-stroke-width: 0.00468em;
+		-webkit-text-stroke-color: rgba($color_white, 0.25);
+
+		&:after {
+			content: '%';
+
+		}
+	}
+
+	span {
+		line-height: 0.8;
+		position: relative;
+		font-size: 26.75em;
+		font-weight: 800;
+		text-transform: uppercase;
+		background: url("../img/discount_mask.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 30%;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		&:after {
+			content: '%';
+
+		}
+
+	}
+
+	&_green {
+		span {
+			background: url("../img/stock_mask.webp");
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
 	}
 }
 

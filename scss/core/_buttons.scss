@@ -97,4 +97,14 @@
 		}
 	}
 
+	&_white {
+		background-color: $color_white;
+		color: #996221;
+
+		&:hover {
+			color: #996221;
+			background-color: darken($color_white, 5%);
+		}
+	}
+
 }

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/twentytwenty.css"/>
-    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/aos.css"/>
-    <link rel="stylesheet" type="text/css" href="css/fancybox.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/twentytwenty.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/aos.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/fancybox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
   </head>
   <body>
     <div class="preloader" id="preloader"><svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
@@ -217,40 +217,118 @@
         </div>
       </header>
       <main class="main_content">
-        <!-- begin testingNaw-->
-        <section class="testingNaw section" id="testingNaw">
-          <div class="container_center">
-            <h2 class="section__title"><span>НАВИГАЦИЯ</span></h2>
-            <ul style="font-size:1.25em;">
-              <li><a href="home">Главная</a></li>
-              <li><a href="discounts">Акции и скидки</a></li>
-            </ul>
+        <!-- begin breadcrumbs-->
+        <div class="breadcrumbs section">
+          <div class="container_center container_center_right">
+            <div class="kama_breadcrumbs"><span><a href="#"><span>Главная</span></a></span><span class="kb_sep"></span><span class="kb_title">Акции и скидки</span></div>
           </div>
-        </section>
-        <!-- end testingNaw-->
-        <!-- begin testButton-->
-        <section class="testButton section" id="testButton">
+        </div>
+        <!-- end breadcrumbs-->
+        <!-- begin stock-->
+        <section class="stock section" id="stock">
           <div class="container_center">
-            <h2 class="section__title"> <span>Кнопки</span></h2><br/>
-            <div class="testButton__content"><a class="btn" href="#"> <span>Подробее о компании</span></a><br/><br/><a class="btn btn_arrow" href="#"> <span>Заказать проект</span></a><br/><br/><a class="btn btn_arrow btn_bg" href="#"> <span>Заказать проект</span></a><br/><br/><a class="btn btn_callback btn_bg" href="#"> <span>Заказать звонок</span></a><br/><br/></div>
-          </div>
-        </section>
-        <!-- end testButton-->
-        <!-- begin tetsNodal-->
-        <section class="tetsNodal section" id="tetsNodal">
-          <div class="container_center">
-            <h2 class="section__title"><span>Модальные окна</span></h2>
-            <div class="tetsNodal__content">
-              <ul style="font-size:1.25em;">
-                <li><a class="show_js" href="#aveQuestions">Есть воросы?</a></li>
-                <li><a class="show_js" href="#aveQuestions1">Есть воросы? (успех!)</a></li>
-                <li><a class="show_js" href="#directorq">Оставьте ваш вопрос директору</a></li>
-                <li><a class="show_js" href="#directorq1">Оставьте ваш вопрос директору (успех!)</a></li>
-              </ul>
+            <h1 class="section__title section__title_lg"><span>Акции и скидки</span></h1>
+            <div class="stock__grid">
+              <!-- start item-->
+              <div class="stock__item bg stock__item_number">
+                <div class="stock__number">
+                  <div class="number"><span class="number_js">5</span><i class="number_js">5</i></div>
+                </div>
+                <div class="stock__content">
+                  <div class="stock__title"><span>Скидка на строительные  работы до конца октября</span></div>
+                  <div class="stock__desc"><span>При заказе строительства дома под ключ*</span></div>
+                </div>
+              </div>
+              <!-- end item-->
+              <div class="stock__item stock__item_img stock_pink bg">
+                <div class="stock__img" style="background-image: url('../../img/stock_img_3.webp')"></div>
+                <div class="stock__content">
+                  <div class="stock__title"><span>Акция 15% на все строительные работы</span></div>
+                  <div class="stock__desc"><span>При заказе строительства дома под ключ*</span></div>
+                  <div class="stock__action"><a class="btn btn_arrow btn_bg" href="#"><span>Подробнее</span></a></div>
+                </div>
+              </div>
+              <!-- start item-->
+              <!-- end item-->
+              <div class="stock__item stock__item_img bg stock_darkblue">
+                <div class="stock__img" style="background-image: url('../../img/stock_img_2.webp')"></div>
+                <div class="stock__content">
+                  <div class="stock__title"><span>Акция на все бетонные строительные работы</span></div>
+                  <div class="stock__desc"><span>При заказе строительства дома под ключ*</span></div>
+                  <div class="stock__action"><a class="btn btn_arrow btn_bg" href="#"><span>Подробнее</span></a></div>
+                </div>
+              </div>
+              <!-- start item-->
+              <!-- end item-->
+              <div class="stock__item stock__item_img bg stock_orange">
+                <div class="stock__img" style="background-image: url('../../img/stock_img_1.webp')"></div>
+                <div class="stock__content">
+                  <div class="stock__title"><span>Укладка травы бесплатно при строительстве под ключ</span></div>
+                  <div class="stock__desc"><span>При заказе строительства дома под ключ*</span></div>
+                  <div class="stock__action"><a class="btn btn_arrow btn_white" href="#"><span>Подробнее</span></a></div>
+                </div>
+              </div>
+              <!-- start item-->
+              <!-- end item-->
+              <div class="stock__item bg stock_bg">
+                <div class="stock__content">
+                  <div class="stock__title"><span>Укладка травы бесплатно при строительстве под ключ</span></div>
+                  <div class="stock__desc"><span>При заказе строительства дома под ключ*</span></div>
+                </div>
+              </div>
+              <!-- start item-->
+              <!-- end item-->
+              <div class="stock__item bg stock_bg stock__item_number stock__item_number_reverse">
+                <div class="stock__number">
+                  <div class="number number_green"><span class="number_js">50</span></div>
+                </div>
+                <div class="stock__content">
+                  <div class="stock__title"><span>Укладка травы бесплатно при строительстве под ключ</span></div>
+                  <div class="stock__desc"><span>При заказе строительства дома под ключ*</span></div>
+                </div>
+              </div>
+              <!-- start item-->
+              <!-- end item-->
+              <div class="stock__item stock__item_img bg stock_teal">
+                <div class="stock__img" style="background-image: url('../../img/stock_img_4.webp')"></div>
+                <div class="stock__content">
+                  <div class="stock__title"><span>Акция на все бетонные строительные работы</span></div>
+                  <div class="stock__desc"><span>При заказе строительства дома под ключ*</span></div>
+                </div>
+              </div>
+              <!-- start item-->
+              <!-- end item-->
+              <div class="stock__item stock__item_img bg stock_green">
+                <div class="stock__img" style="background-image: url('../../img/stock_img_3.webp')"></div>
+                <div class="stock__content">
+                  <div class="stock__title"><span>Акция на все бетонные строительные работы</span></div>
+                  <div class="stock__desc"><span>При заказе строительства дома под ключ*</span></div>
+                  <div class="stock__action"><a class="btn btn_arrow btn_bg" href="#"><span>Подробнее</span></a></div>
+                </div>
+              </div>
+              <!-- start item-->
+              <div class="stock__item stock__item_img bg stock_coral">
+                <div class="stock__img" style="background-image: url('../../img/stock_img_2.webp')"></div>
+                <div class="stock__content">
+                  <div class="stock__title"><span>Акция на все бетонные строительные работы</span></div>
+                  <div class="stock__desc"><span>При заказе строительства дома под ключ*</span></div>
+                  <div class="stock__action"><a class="btn btn_arrow btn_bg" href="#"><span>Подробнее</span></a></div>
+                </div>
+              </div>
+              <!-- end item-->
+              <!-- start item-->
+              <div class="stock__item bg stock_blue">
+                <div class="stock__content">
+                  <div class="stock__title"><span>Акция на все бетонные строительные работы</span></div>
+                  <div class="stock__desc"><span>При заказе строительства дома под ключ*</span></div>
+                  <div class="stock__action"><a class="btn btn_arrow btn_bg" href="#"><span>Подробнее</span></a></div>
+                </div>
+              </div>
+              <!-- end item-->
             </div>
           </div>
         </section>
-        <!-- end tetsNodal-->
+        <!-- end stock-->
       </main>
       <div class="toTop"><a href="#wrapper"> <i class="icon_arrow_top"></i></a></div>
       <footer class="footer">
@@ -586,17 +664,17 @@
         </div>
       </div>
       <!-- End modal info-->
-      <script src="js/jquery.js"></script>
-      <script src="js/jquery.maskedinput.min.js"></script>
-      <script src="js/modal.js"></script>
-      <script src="js/swiper-bundle.min.js"></script>
-      <script src="js/slider.js"></script>
-      <script src="js/jquery.event.move.js"></script>
-      <script src="js/jquery.twentytwenty.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/fancybox.min.js"></script>
-      <script src="js/form.js"></script>
-      <script src="js/function.js"></script>
+      <script src="../js/jquery.js"></script>
+      <script src="../js/jquery.maskedinput.min.js"></script>
+      <script src="../js/modal.js"></script>
+      <script src="../js/swiper-bundle.min.js"></script>
+      <script src="../js/slider.js"></script>
+      <script src="../js/jquery.event.move.js"></script>
+      <script src="../js/jquery.twentytwenty.js"></script>
+      <script src="../js/aos.js"></script>
+      <script src="../js/fancybox.min.js"></script>
+      <script src="../js/form.js"></script>
+      <script src="../js/function.js"></script>
     </div>
   </body>
 </html>
