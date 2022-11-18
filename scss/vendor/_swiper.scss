@@ -34,6 +34,26 @@
     }
 }
 
+.single__dotted_white {
+    .swiper-pagination-bullet {
+        background-color: rgba($color_white, 0);
+        border: 0.0625em solid $color_white;
+
+        &:hover {
+            background-color: rgba($color_white, 0.3);
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $color_white;
+
+        &:hover {
+            background-color: $color_white;
+
+        }
+    }
+}
+
 .single {
     &__wrapper {}
 
@@ -83,5 +103,20 @@
                 }
             }
         }
+    }
+}
+
+.examples__gallery {
+    .single__control {
+        position: absolute;
+        bottom: 1.25em;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+
+    }
+
+    .swiper-pagination-bullets {
+        justify-content: center;
     }
 }

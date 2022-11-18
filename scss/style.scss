@@ -18,12 +18,16 @@
 @import 'section/ourwork';
 
 @import 'section/stock';
+@import 'section/questions';
+
+@import 'section/examples';
 
 @import 'core/footer';
 
 @import 'core/form';
 
 @import 'core/breadcrumb';
+@import 'core/cat-list';
 
 @import 'core/pagination';
 
@@ -45,3 +49,4 @@
 
 @import 'vendor/modal';
 @import 'vendor/swiper';
+@import 'vendor/fancybox';

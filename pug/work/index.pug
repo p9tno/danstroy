@@ -1,0 +1,136 @@
+extends ../layout/layout.pug
+block variable
+    -var path = '../';
+
+
+block content
+    // begin breadcrumbs
+    .breadcrumbs.section
+        .container_center.container_center_right
+            .kama_breadcrumbs
+                span
+                    a(href="#")
+                        span Главная
+
+                span.kb_sep
+
+                span.kb_title Примеры работ
+
+
+            //- .kama_breadcrumbs
+            //-     span
+            //-         a(href="#")
+            //-             span Главная
+            //-     span.kb_sep
+            //-     span
+            //-         a(href="#")
+            //-             span Блог
+            //-     span.kb_sep
+            //- 
+            //-     span.kb_title С чего начать ремонт
+
+    // end breadcrumbs
+
+    // begin examples
+    section#examples.examples.section
+        .container_center
+            h1.section__title.section__title_lg
+                span Примеры работ
+            .examples__cat
+                ul.cat-list
+                    li.cat-item
+                        a(href="#") Все
+                    li.cat-item
+                        a(href="#") Монолитные работы 
+                    li.cat-item.current-cat
+                        a(href="#") Гидроизоляционные работы
+                    li.cat-item
+                        a(href="#") Благоустройство территории 
+                    li.cat-item
+                        a(href="#") Земляные работы 
+                    li.cat-item
+                        a(href="#") Общестроительные работы
+                    li.cat-item
+                        a(href="#") Инженерные сети
+
+            .examples__grid
+                each item in [ 'Заливка фундамента под дом п. Каушта (Полный комплекс)', 'Укрепление склонов п. Каушта', 'Гидроизоляция в Сосново', 'Заливка опалубки бетонным раствором в Бутово', 'Откопка котлованов в Иваново', 'Дренаж в Сказочной Долине', 'Укрепление склонов п. Каушта ', 'Заливка фундамента под дом п. Каушта (Полный комплекс)', 'Заливка опалубки бетонным раствором в Бутово' ]
+
+
+                    .examples__item
+
+                        .examples__gallery
+                            .swiper.single.single-swiper-js
+                                .swiper-wrapper.single__wrapper.itemForDataFancybox_js
+                                    each item in [1,2,3,1]
+                                        .swiper-slide.single__slide
+                                            .examples__img.img
+                                                a(href="../img/examples_"+item+".jpg" data-fancybox data-type="image")
+                                                    img(src="../img/examples_"+item+".jpg" loading="lazy")
+
+                                .single__control
+                                    .single__dotted.single__dotted_white
+
+                        .examples__content
+                            .examples__title
+                                span!=item
+                            ul.examples__list.list
+                                each item in [ {label: 'Категория', text: 'Общестроительные работы'}, {label: 'Вид работ', text: 'Заливка фундамента'}, {label: 'Стоимость', text: '150 000 ₽'} ]
+                                    li
+                                        .examples__label
+                                            span!=item.label 
+                                        .examples__text
+                                            span!=item.text
+
+
+    // end examples
+
+    // begin questions
+    section#questions.questions.section
+        .container_center
+            .questions__content.bg
+                h2.section__title.section__title_lg
+                    span Остались вопросы?
+                .questions__label
+                    span Напишите нам и наш менеджер перезвонт вам в течение 24 часов
+                .questions__form
+                    form.form.form_grid(action="send.php")
+                        //- из какой формы на сайте
+                        input(type="hidden" name="subject" value="форма в футоре")
+                        //- проверка спама
+                        input(type="hidden" name="notspam" value="")
+
+
+
+                        .form__row
+                            .form__label
+                                span Ваше ФИО*
+                            input(type="text", required placeholder="Напишите ваше ФИО")
+
+
+                        .form__row
+                            .form__label
+                                span Введите ваш номер телефона*
+                            input(type="text", required placeholder="8 (___) ___ ____")
+
+                        .form__row.form__row_textarea
+                            .form__label
+                                span Ваш вопрос
+                            textarea(type="text", placeholder="Опишите вашу проблему")
+
+
+                        .form__row.form__row_mt20
+                            .button
+                                button.btn.btn_callback.btn_bg(type="submit")
+                                    span Заказать звонок
+
+                        .form__row.form__row_mt20
+                            .form__text
+                                span Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+
+                        //- .form__row.form__row_mb0
+                        //-     .form__success
+                        //-         span Спасибо за обращение!
+
+
+    // end questions

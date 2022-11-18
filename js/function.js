@@ -130,6 +130,26 @@ $(document).ready(function() {
     }
     openDropMenu();
 
+    function addDataFancybox() {
+        let item = $('.itemForDataFancybox_js');
+        let num = 0;
+
+        item.each(function(index, el) {
+            $(this).find('a').attr('data-fancybox', num);
+            num++;
+        });
+    }
+    addDataFancybox();
+
+    $('[data-fancybox]').fancybox({
+        loop: true,
+        // autoFocus: false,
+        infobar: false,
+        toolbar: false,
+        smallBtn: true,
+
+    });
+
 
     function collapsed() {
         let toggle = $('[data-collapse]');
