@@ -51,43 +51,65 @@ body {
 		}
 	}
 
-	&__title {
-		font-family: $main_font_family;
-		font-size: 1em;
-		margin: 0;
+	h1,
+	h2,
+	h3 {
 		line-height: 1.1;
-
-		span {
-			color: #222424;
-			font-weight: 600;
-			font-size: 2em;
-
-			@media (min-width: 768px) {
-				font-size: 2.25em;
-
-			}
-		}
-
-		&_lg {
-			margin-bottom: 1.25em;
-
-			@media (min-width: 768px) {
-				margin-bottom: 3.125em;
-			}
-
-			span {
-				font-weight: 400;
-				font-size: 1.875em;
-				/* 30/16 */
-				@media (min-width: 768px) {
-					font-size: 2.75em;
-
-				}
-			}
-
-		}
+		font-weight: 600;
+		font-family: $main_font_family;
+		margin: 0;
+		color: #222424;
 
 	}
+
+	h1 {
+		font-size: 1.875em;
+		@media (min-width: 768px) {
+			font-size: 2.75em;
+		}
+	}
+
+	h2,
+	h3 {
+		font-size: 2em;
+		@media (min-width: 768px) {
+			font-size: 2.25em;
+		}
+	}
+
+	// &__title {
+	// 	font-size: 1em;
+	//
+	// 	span {
+	// 		// font-weight: 600;
+	// 		font-size: 2em;
+	//
+	// 		@media (min-width: 768px) {
+	// 			font-size: 2.25em;
+	//
+	// 		}
+	// 	}
+	//
+	// 	&_lg {
+	// 		margin-bottom: 1.25em;
+	//
+	// 		@media (min-width: 768px) {
+	// 			margin-bottom: 3.125em;
+	// 		}
+	//
+	// 		span {
+	// 			font-weight: 400;
+	// 			font-size: 1.875em;
+	// 			/* 30/16 */
+	// 			@media (min-width: 768px) {
+	// 				font-size: 2.75em;
+	//
+	// 			}
+	// 		}
+	//
+	// 	}
+	//
+	// }
 
 	&__content {
 		line-height: 1.5;
@@ -228,14 +250,20 @@ body {
 		line-height: 0.8;
 		position: absolute;
 		bottom: -0.035em;
-		right: -0.035em;
+		right: -0.01em;
 		color: transparent;
 		font-style: normal;
 		font-size: 26.75em;
 		font-weight: 800;
-		z-index: -1;
+		// z-index: -1;
 		-webkit-text-stroke-width: 0.00468em;
 		-webkit-text-stroke-color: rgba($color_white, 0.25);
+
+		@media (min-width: 768px) {
+
+			// bottom: -0.035em;
+			right: -0.035em;
+		}
 
 		&:after {
 			content: '%';
@@ -246,6 +274,7 @@ body {
 	span {
 		line-height: 0.8;
 		position: relative;
+		z-index: 1;
 		font-size: 26.75em;
 		font-weight: 800;
 		text-transform: uppercase;

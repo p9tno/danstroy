@@ -34,8 +34,7 @@ block content
     // begin examples
     section#examples.examples.section
         .container_center
-            h1.section__title.section__title_lg
-                span Примеры работ
+            h1 Примеры работ
             .examples__cat
                 ul.cat-list
                     li.cat-item
@@ -57,19 +56,54 @@ block content
                 each item in [ 'Заливка фундамента под дом п. Каушта (Полный комплекс)', 'Укрепление склонов п. Каушта', 'Гидроизоляция в Сосново', 'Заливка опалубки бетонным раствором в Бутово', 'Откопка котлованов в Иваново', 'Дренаж в Сказочной Долине', 'Укрепление склонов п. Каушта ', 'Заливка фундамента под дом п. Каушта (Полный комплекс)', 'Заливка опалубки бетонным раствором в Бутово' ]
 
 
-                    .examples__item
+                    .examples__item.data_js
 
                         .examples__gallery
-                            .swiper.single.single-swiper-js
-                                .swiper-wrapper.single__wrapper.itemForDataFancybox_js
-                                    each item in [1,2,3,1]
-                                        .swiper-slide.single__slide
-                                            .examples__img.img
-                                                a(href="../img/examples_"+item+".jpg" data-fancybox data-type="image")
-                                                    img(src="../img/examples_"+item+".jpg" loading="lazy")
 
-                                .single__control
-                                    .single__dotted.single__dotted_white
+                            //- .swiper.single.single-swiper-js
+                            //-     .swiper-wrapper.single__wrapper.itemForDataFancybox_js
+                            //-         each item in [1,2,3,1]
+                            //-             .swiper-slide.single__slide
+                            //-                 .examples__img.img
+                            //-                     a(href="../img/examples_"+item+".jpg" data-fancybox data-type="image")
+                            //-                         img(src="../img/examples_"+item+".jpg" loading="lazy")
+                            //- 
+                            //-     .single__control
+                            //-         .single__dotted.single__dotted_white
+
+
+                            .gallery
+                                .swiper.gallerySwiper.gallerySwiper-js
+                                    .swiper-wrapper
+                                        each item in [1,2,3]
+                                            .swiper-slide
+                                                .gallery__item
+                                                    a.gallery__link.img.gallery_js(href="#" data-modal="")
+                                                        img(src="../img/examples_"+item+".jpg" loading="lazy")
+
+                                    .gallerySwiperModal__dotted.single__dotted_white
+
+                                // Begin Modal modalGallery
+                                .modal.fade.modalGallery( id="")
+                                    .modal-dialog
+                                        .modal-content
+                                            a(href="#" class="modal-close" data-dismiss="modal")
+                                            .modal-body
+                                                .swiper.gallerySwiperModal.gallerySwiperModal-js
+                                                    .swiper-wrapper
+                                                        each item in [1,2,3]
+                                                            .swiper-slide
+                                                                .gallery__item.img
+                                                                    img(src="../img/examples_"+item+".jpg" loading="lazy")
+                                                .modalGallery__control
+
+                                                    i.icon_arrow_left
+                                                    i.icon_arrow_right
+
+                                                .gallerySwiper__dotted.single__dotted_white
+
+                                // End modal modalGallery
+
 
                         .examples__content
                             .examples__title

@@ -87,7 +87,7 @@
               <div class="header__icon"><i class="icon_phone"></i></div><span>+7 (812) 345-54-54</span>
             </div>
             <div class="header__item desktop">
-              <div class="calback"><a class="btn btn btn_callback btn_bg" href="#"> <span>Заказать звонок</span></a></div>
+              <div class="calback"><a class="btn btn btn_callback btn_bg show_js" href="#aveQuestions"><span>Заказать звонок</span></a></div>
             </div>
           </div>
           <div class="header__bottom">
@@ -227,7 +227,7 @@
         <!-- begin examples-->
         <section class="examples section" id="examples">
           <div class="container_center">
-            <h1 class="section__title section__title_lg"><span>Примеры работ</span></h1>
+            <h1>Примеры работ</h1>
             <div class="examples__cat">
               <ul class="cat-list">
                 <li class="cat-item"><a href="#">Все</a></li>
@@ -240,26 +240,48 @@
               </ul>
             </div>
             <div class="examples__grid">
-              <div class="examples__item">
+              <div class="examples__item data_js">
                 <div class="examples__gallery">
-                  <div class="swiper single single-swiper-js">
-                    <div class="swiper-wrapper single__wrapper itemForDataFancybox_js">
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                  <div class="gallery">
+                    <div class="swiper gallerySwiper gallerySwiper-js">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
+                        </div>
                       </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_2.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_3.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                      <div class="gallerySwiperModal__dotted single__dotted_white"></div>
+                    </div>
+                    <!-- Begin Modal modalGallery-->
+                    <div class="modal fade modalGallery" id="">
+                      <div class="modal-dialog">
+                        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+                          <div class="modal-body">
+                            <div class="swiper gallerySwiperModal gallerySwiperModal-js">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_1.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_2.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_3.jpg" loading="lazy"/></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modalGallery__control"><i class="icon_arrow_left"></i><i class="icon_arrow_right"></i></div>
+                            <div class="gallerySwiper__dotted single__dotted_white"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="single__control">
-                      <div class="single__dotted single__dotted_white"></div>
-                    </div>
+                    <!-- End modal modalGallery-->
                   </div>
                 </div>
                 <div class="examples__content">
@@ -280,26 +302,48 @@
                   </ul>
                 </div>
               </div>
-              <div class="examples__item">
+              <div class="examples__item data_js">
                 <div class="examples__gallery">
-                  <div class="swiper single single-swiper-js">
-                    <div class="swiper-wrapper single__wrapper itemForDataFancybox_js">
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                  <div class="gallery">
+                    <div class="swiper gallerySwiper gallerySwiper-js">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
+                        </div>
                       </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_2.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_3.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                      <div class="gallerySwiperModal__dotted single__dotted_white"></div>
+                    </div>
+                    <!-- Begin Modal modalGallery-->
+                    <div class="modal fade modalGallery" id="">
+                      <div class="modal-dialog">
+                        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+                          <div class="modal-body">
+                            <div class="swiper gallerySwiperModal gallerySwiperModal-js">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_1.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_2.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_3.jpg" loading="lazy"/></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modalGallery__control"><i class="icon_arrow_left"></i><i class="icon_arrow_right"></i></div>
+                            <div class="gallerySwiper__dotted single__dotted_white"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="single__control">
-                      <div class="single__dotted single__dotted_white"></div>
-                    </div>
+                    <!-- End modal modalGallery-->
                   </div>
                 </div>
                 <div class="examples__content">
@@ -320,26 +364,48 @@
                   </ul>
                 </div>
               </div>
-              <div class="examples__item">
+              <div class="examples__item data_js">
                 <div class="examples__gallery">
-                  <div class="swiper single single-swiper-js">
-                    <div class="swiper-wrapper single__wrapper itemForDataFancybox_js">
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                  <div class="gallery">
+                    <div class="swiper gallerySwiper gallerySwiper-js">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
+                        </div>
                       </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_2.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_3.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                      <div class="gallerySwiperModal__dotted single__dotted_white"></div>
+                    </div>
+                    <!-- Begin Modal modalGallery-->
+                    <div class="modal fade modalGallery" id="">
+                      <div class="modal-dialog">
+                        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+                          <div class="modal-body">
+                            <div class="swiper gallerySwiperModal gallerySwiperModal-js">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_1.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_2.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_3.jpg" loading="lazy"/></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modalGallery__control"><i class="icon_arrow_left"></i><i class="icon_arrow_right"></i></div>
+                            <div class="gallerySwiper__dotted single__dotted_white"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="single__control">
-                      <div class="single__dotted single__dotted_white"></div>
-                    </div>
+                    <!-- End modal modalGallery-->
                   </div>
                 </div>
                 <div class="examples__content">
@@ -360,26 +426,48 @@
                   </ul>
                 </div>
               </div>
-              <div class="examples__item">
+              <div class="examples__item data_js">
                 <div class="examples__gallery">
-                  <div class="swiper single single-swiper-js">
-                    <div class="swiper-wrapper single__wrapper itemForDataFancybox_js">
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                  <div class="gallery">
+                    <div class="swiper gallerySwiper gallerySwiper-js">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
+                        </div>
                       </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_2.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_3.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                      <div class="gallerySwiperModal__dotted single__dotted_white"></div>
+                    </div>
+                    <!-- Begin Modal modalGallery-->
+                    <div class="modal fade modalGallery" id="">
+                      <div class="modal-dialog">
+                        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+                          <div class="modal-body">
+                            <div class="swiper gallerySwiperModal gallerySwiperModal-js">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_1.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_2.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_3.jpg" loading="lazy"/></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modalGallery__control"><i class="icon_arrow_left"></i><i class="icon_arrow_right"></i></div>
+                            <div class="gallerySwiper__dotted single__dotted_white"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="single__control">
-                      <div class="single__dotted single__dotted_white"></div>
-                    </div>
+                    <!-- End modal modalGallery-->
                   </div>
                 </div>
                 <div class="examples__content">
@@ -400,26 +488,48 @@
                   </ul>
                 </div>
               </div>
-              <div class="examples__item">
+              <div class="examples__item data_js">
                 <div class="examples__gallery">
-                  <div class="swiper single single-swiper-js">
-                    <div class="swiper-wrapper single__wrapper itemForDataFancybox_js">
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                  <div class="gallery">
+                    <div class="swiper gallerySwiper gallerySwiper-js">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
+                        </div>
                       </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_2.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_3.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                      <div class="gallerySwiperModal__dotted single__dotted_white"></div>
+                    </div>
+                    <!-- Begin Modal modalGallery-->
+                    <div class="modal fade modalGallery" id="">
+                      <div class="modal-dialog">
+                        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+                          <div class="modal-body">
+                            <div class="swiper gallerySwiperModal gallerySwiperModal-js">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_1.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_2.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_3.jpg" loading="lazy"/></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modalGallery__control"><i class="icon_arrow_left"></i><i class="icon_arrow_right"></i></div>
+                            <div class="gallerySwiper__dotted single__dotted_white"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="single__control">
-                      <div class="single__dotted single__dotted_white"></div>
-                    </div>
+                    <!-- End modal modalGallery-->
                   </div>
                 </div>
                 <div class="examples__content">
@@ -440,26 +550,48 @@
                   </ul>
                 </div>
               </div>
-              <div class="examples__item">
+              <div class="examples__item data_js">
                 <div class="examples__gallery">
-                  <div class="swiper single single-swiper-js">
-                    <div class="swiper-wrapper single__wrapper itemForDataFancybox_js">
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                  <div class="gallery">
+                    <div class="swiper gallerySwiper gallerySwiper-js">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
+                        </div>
                       </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_2.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_3.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                      <div class="gallerySwiperModal__dotted single__dotted_white"></div>
+                    </div>
+                    <!-- Begin Modal modalGallery-->
+                    <div class="modal fade modalGallery" id="">
+                      <div class="modal-dialog">
+                        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+                          <div class="modal-body">
+                            <div class="swiper gallerySwiperModal gallerySwiperModal-js">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_1.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_2.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_3.jpg" loading="lazy"/></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modalGallery__control"><i class="icon_arrow_left"></i><i class="icon_arrow_right"></i></div>
+                            <div class="gallerySwiper__dotted single__dotted_white"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="single__control">
-                      <div class="single__dotted single__dotted_white"></div>
-                    </div>
+                    <!-- End modal modalGallery-->
                   </div>
                 </div>
                 <div class="examples__content">
@@ -480,26 +612,48 @@
                   </ul>
                 </div>
               </div>
-              <div class="examples__item">
+              <div class="examples__item data_js">
                 <div class="examples__gallery">
-                  <div class="swiper single single-swiper-js">
-                    <div class="swiper-wrapper single__wrapper itemForDataFancybox_js">
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                  <div class="gallery">
+                    <div class="swiper gallerySwiper gallerySwiper-js">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
+                        </div>
                       </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_2.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_3.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                      <div class="gallerySwiperModal__dotted single__dotted_white"></div>
+                    </div>
+                    <!-- Begin Modal modalGallery-->
+                    <div class="modal fade modalGallery" id="">
+                      <div class="modal-dialog">
+                        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+                          <div class="modal-body">
+                            <div class="swiper gallerySwiperModal gallerySwiperModal-js">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_1.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_2.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_3.jpg" loading="lazy"/></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modalGallery__control"><i class="icon_arrow_left"></i><i class="icon_arrow_right"></i></div>
+                            <div class="gallerySwiper__dotted single__dotted_white"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="single__control">
-                      <div class="single__dotted single__dotted_white"></div>
-                    </div>
+                    <!-- End modal modalGallery-->
                   </div>
                 </div>
                 <div class="examples__content">
@@ -520,26 +674,48 @@
                   </ul>
                 </div>
               </div>
-              <div class="examples__item">
+              <div class="examples__item data_js">
                 <div class="examples__gallery">
-                  <div class="swiper single single-swiper-js">
-                    <div class="swiper-wrapper single__wrapper itemForDataFancybox_js">
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                  <div class="gallery">
+                    <div class="swiper gallerySwiper gallerySwiper-js">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
+                        </div>
                       </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_2.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_3.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                      <div class="gallerySwiperModal__dotted single__dotted_white"></div>
+                    </div>
+                    <!-- Begin Modal modalGallery-->
+                    <div class="modal fade modalGallery" id="">
+                      <div class="modal-dialog">
+                        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+                          <div class="modal-body">
+                            <div class="swiper gallerySwiperModal gallerySwiperModal-js">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_1.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_2.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_3.jpg" loading="lazy"/></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modalGallery__control"><i class="icon_arrow_left"></i><i class="icon_arrow_right"></i></div>
+                            <div class="gallerySwiper__dotted single__dotted_white"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="single__control">
-                      <div class="single__dotted single__dotted_white"></div>
-                    </div>
+                    <!-- End modal modalGallery-->
                   </div>
                 </div>
                 <div class="examples__content">
@@ -560,26 +736,48 @@
                   </ul>
                 </div>
               </div>
-              <div class="examples__item">
+              <div class="examples__item data_js">
                 <div class="examples__gallery">
-                  <div class="swiper single single-swiper-js">
-                    <div class="swiper-wrapper single__wrapper itemForDataFancybox_js">
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                  <div class="gallery">
+                    <div class="swiper gallerySwiper gallerySwiper-js">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="gallery__item"><a class="gallery__link img gallery_js" href="#" data-modal=""><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
+                        </div>
                       </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_2.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_2.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_3.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_3.jpg" loading="lazy"/></a></div>
-                      </div>
-                      <div class="swiper-slide single__slide">
-                        <div class="examples__img img"><a href="../img/examples_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="../img/examples_1.jpg" loading="lazy"/></a></div>
+                      <div class="gallerySwiperModal__dotted single__dotted_white"></div>
+                    </div>
+                    <!-- Begin Modal modalGallery-->
+                    <div class="modal fade modalGallery" id="">
+                      <div class="modal-dialog">
+                        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+                          <div class="modal-body">
+                            <div class="swiper gallerySwiperModal gallerySwiperModal-js">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_1.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_2.jpg" loading="lazy"/></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="gallery__item img"><img src="../img/examples_3.jpg" loading="lazy"/></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modalGallery__control"><i class="icon_arrow_left"></i><i class="icon_arrow_right"></i></div>
+                            <div class="gallerySwiper__dotted single__dotted_white"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="single__control">
-                      <div class="single__dotted single__dotted_white"></div>
-                    </div>
+                    <!-- End modal modalGallery-->
                   </div>
                 </div>
                 <div class="examples__content">
@@ -758,7 +956,7 @@
                       <div class="phone"><span>+7 (812) 345-54-54</span></div>
                     </div>
                     <div class="footer__calback">
-                      <div class="calback"><a class="btn btn btn_callback btn_bg" href="#"> <span>Заказать звонок</span></a></div>
+                      <div class="calback"><a class="btn btn btn_callback btn_bg show_js" href="#aveQuestions"><span>Заказать звонок</span></a></div>
                     </div>
                   </div>
                 </div>

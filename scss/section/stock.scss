@@ -1,7 +1,9 @@
 .stock {
     &__grid {
-
+        margin-top: 1.5em;
         @media (min-width: 768px) {
+            margin-top: 3.125em;
+
             display: grid;
             grid-auto-rows: minmax(15.5em, auto);
 

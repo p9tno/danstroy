@@ -187,3 +187,107 @@
     }
 
 }
+
+.modalGallery {
+    .modal-dialog {
+        width: 28em;
+        @media (min-width: 768px) {
+            width: 74.125em;
+        }
+    }
+
+    .modal-close {
+        z-index: 10;
+        color: $color_white;
+        font-size: 1.25em;
+        top: 0.75em;
+        right: 0.75em;
+        @media (min-width: 768px) {
+            top: 1.25em;
+            right: 1.25em;
+
+        }
+    }
+
+    .modal-content {
+        padding: 0;
+        // border-radius: 1em;
+
+    }
+
+    .gallerySwiper__dotted {
+        position: absolute;
+        bottom: -1.875em;
+        z-index: 1;
+    }
+
+    .gallery__item {
+        height: 15em;
+        @media (min-width: 768px) {
+            height: 39.125em;
+        }
+    }
+
+    .modalGallery__control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-60%);
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+
+        left: -1.25em;
+        /* 22/16 */
+        width: 109%;
+        @media (min-width: 768px) {
+            width: 105%;
+            left: -1.875em;
+
+        }
+
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.75em;
+            height: 3.75em;
+            border-radius: 50%;
+
+            background-color: rgba($color_white, 1);
+            opacity: 1;
+            visibility: visible;
+            color: #0A4D5B;
+            font-size: 1em;
+            cursor: pointer;
+            outline: none;
+
+            transition: 0.3s;
+
+            &:hover {
+
+                background-color: rgba($color_white, 0.9);
+            }
+
+            &.swiper-button-disabled {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    .swiper-pagination-bullets {
+        @media (min-width: 768px) {
+            font-size: 1.334em;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        cursor: auto;
+
+        &:hover {
+            background-color: rgba($color_white, 0)!important;
+            pointer-events: none;
+        }
+    }
+
+}

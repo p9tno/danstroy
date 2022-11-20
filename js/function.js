@@ -150,6 +150,12 @@ $(document).ready(function() {
 
     });
 
+    $('[data-fancybox]').fancybox({
+        beforeLoad: function () {
+            /* код */
+        }
+    });
+
 
     function collapsed() {
         let toggle = $('[data-collapse]');

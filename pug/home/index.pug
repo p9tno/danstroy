@@ -14,18 +14,18 @@ block content
                             .swiper-slide.single__slide
                                 .firstscreen__bg.bg.desktop(style="background-image: url('../../img/firstscreen_bg.webp')")
                                     .firstscreen__content
-                                        h1.firstscreen__title
+                                        .firstscreen__title
                                             span Пусть ваши мечты станут нашим проектом
                                         .firstscreen__action
-                                            a.btn.btn_arrow.btn_bg(href="#")
+                                            a.btn.btn_arrow.btn_bg.show_js(href="#aveQuestions")
                                                 span Заказать проект
 
                                 .firstscreen__bg.bg.mobile(style="background-image: url('../../img/firstscreen_bg_m.webp')")
                                     .firstscreen__content
-                                        h1.firstscreen__title
+                                        .firstscreen__title
                                             span Пусть ваши мечты станут нашим проектом
                                         .firstscreen__action
-                                            a.btn.btn_arrow.btn_bg(href="#")
+                                            a.btn.btn_arrow.btn_bg.show_js(href="#aveQuestions")
                                                 span Заказать проект
 
                 .single__control
@@ -42,8 +42,7 @@ block content
     // begin services
     section#services.services.section
         .container_center
-            h2.section__title
-                span Наши услуги
+            h1 Наши услуги
             .section__content
                 p Наша компания проводит работы по благоустройству; общестроительные, монолитные, земельные, инженерные и гидроизоляционные работы. 
 
@@ -61,7 +60,7 @@ block content
                                     .services__title
                                         .services__icon!=item.icon
                                             //- i.icon_water
-                                        span=item.title
+                                        a(href="#")=item.title
                                         .services__toggle
                                             i.icon_arrow_bottom
 
@@ -98,7 +97,7 @@ block content
                         span 5
                         i 5
                 .discount__content
-                    h2.section__title
+                    .discount__title
                         span Скидка на строительные  работы до конца октября
                     .discount__label
                         span При заказе строительства дома под ключ*
@@ -123,8 +122,7 @@ block content
     // begin about
     section#about.about.section
         .container_center
-            h2.section__title
-                span О компании
+            h2 О компании
             .about__content
 
                 .section__content
@@ -158,8 +156,7 @@ block content
     // begin advantages
     section#advantages.advantages.section
         .container_center
-            h2.section__title
-                span Наши преимущества
+            h2 Наши преимущества
             .advantages__list
 
 
@@ -197,8 +194,7 @@ block content
     // begin steps
     section#steps.steps.section
         .container_center
-            h2.section__title
-                span Четыре простых шага для вызова мастера
+            h2 Четыре простых шага для вызова мастера
             .steps__list
                 .steps__item
                     .steps__img
@@ -228,8 +224,7 @@ block content
         .container_center
             .ourwork__content
                 .ourwork__left
-                    h2.section__title
-                        span Немного о качестве нашей работы
+                    h3 Немного о качестве нашей работы
                     .section__content
                         p Когда мы вместе с заказчиком проектируем будущий участок, то в первую очередь говорим и думаем о будущем. Наша главная задача - учесть интересы всех членов семьи и создать пространство для жизни, которое будет приносить пользу и радость будущим поколениям ООО «Дан-Строй» - организация, которая специализируется на техническом ремонте, общестроительных работах и комплексном благоустройстве территории. Мы работаем на территории Санкт-Петербурга и Ленинградской области.
                         p Репутация для нас - самое главное. Мы сделаем все возможное, чтобы сотрудничество было максимально продуктивным и долгосрочным. Будьте уверены, что, работая с нами, вы получаете ответственного и надежного партнера.
@@ -244,7 +239,7 @@ block content
                                 span руководитель компании Дан Строй
 
                     .ourwork__action
-                        a.btn.btn_bg.btn_arrow(href="#") 
+                        a.btn.btn_bg.btn_arrow.show_js(href="#directorq")
                             span Написать директору
 
 
