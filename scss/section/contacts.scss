@@ -1,0 +1,141 @@
+.contacts {
+    &__wrap {
+        margin-top: 1.125em;
+        @media (min-width: 768px) {
+            margin-top: 2.25em;
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+
+    &__content {
+        margin-bottom: 2.5em;
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+
+        margin-bottom: 1em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (min-width: 768px) {
+            margin-bottom: 2em;
+
+        }
+
+        .info {
+            display: block;
+        }
+
+        .info__item {
+            display: flex;
+            align-items: center;
+
+            margin-bottom: 1.125em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            padding: 0;
+            text-align: left;
+        }
+
+        .info__icon {
+            margin: 0 0.625em 0 0;
+
+            i {
+                color: $color_black;
+            }
+        }
+
+        .info__label {
+            span {
+                color: rgba($color_black,0.9);
+
+                @media (min-width: 768px) {
+                    font-size: 1em;
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+                color: rgba($color_black,0.9);
+                @media (min-width: 768px) {
+                    font-size: 1em;
+                }
+            }
+
+            br {
+                display: none;
+            }
+        }
+
+        .soc__link {
+            color: rgba($color_info, 0.4);
+
+            @media (min-width: 768px) {
+                &:hover {
+                    color: rgba($color_info, 0.7);
+                }
+            }
+        }
+    }
+
+    &__label {
+        margin-bottom: 0.75em;
+        @media (min-width: 768px) {
+            margin-bottom: 1.25em;
+
+        }
+
+        span {
+            font-size: 1em;
+            font-weight: 700;
+            @media (min-width: 768px) {
+                font-size: 1.125em;
+
+            }
+        }
+    }
+
+    &__soc {}
+
+    &__pay {}
+
+    &__map {
+        @media (min-width: 768px) {
+            width: 62.5em;
+        }
+    }
+
+}
+
+.map {
+    &__content {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 1em;
+        padding-bottom: 15em;
+        @media (min-width: 768px) {
+            padding-bottom: 27.875em;
+
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+
+}

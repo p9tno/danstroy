@@ -1,0 +1,75 @@
+.company {
+    @media (min-width: 768px) {
+        padding-bottom: 0;
+
+    }
+
+    .section__content {
+        margin-top: 1.5625em;
+        @media (min-width: 768px) {
+            margin-top: 3.125em;
+        }
+    }
+
+    &__content {
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__left {
+        margin-bottom: 1.25em;
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+            width: 46.875em;
+        }
+    }
+
+    &__right {
+        position: relative;
+        width: 36.0625em;
+        height: 30em;
+        font-size: 0.59794em;
+
+        @media (min-width: 768px) {
+            font-size: 1em;
+            margin-left: 5em;
+            margin-top: 0.4em;
+        }
+
+    }
+
+    &__el {
+        position: absolute;
+    }
+
+    &__el_1 {
+        background-image: url("../img/company_el_1.webp");
+        width: 10.375em;
+        height: 7.625em;
+        bottom: 0;
+        left: 0;
+        font-size: 1.25em;
+
+    }
+
+    &__el_2 {
+        background-image: url("../img/company_el_2.webp");
+        width: 3.25em;
+        height: 2.375em;
+        top: 2em;
+        right: 6em;
+        font-size: 1.25em;
+    }
+
+    &__el_3 {
+        background-image: url("../img/company_el_3.webp");
+        width: 5.125em;
+        height: 3.75em;
+        bottom: 6em;
+        right: 1em;
+        font-size: 1.25em;
+
+    }
+
+}
