@@ -141,20 +141,20 @@ $(document).ready(function() {
     }
     addDataFancybox();
 
-    $('[data-fancybox]').fancybox({
-        loop: true,
-        // autoFocus: false,
-        infobar: false,
-        toolbar: false,
-        smallBtn: true,
+    // $('[data-fancybox]').fancybox({
+    //     loop: true,
+    //     // autoFocus: false,
+    //     infobar: false,
+    //     toolbar: false,
+    //     smallBtn: true,
+    //
+    // });
 
-    });
-
-    $('[data-fancybox]').fancybox({
-        beforeLoad: function () {
-            /* код */
-        }
-    });
+    // $('[data-fancybox]').fancybox({
+    //     beforeLoad: function () {
+    //         /* код */
+    //     }
+    // });
 
 
     function collapsed() {
@@ -164,6 +164,8 @@ $(document).ready(function() {
             let id = $(this).data('collapse'),
             body = $('[data-collapse-body="'+id+'"]'),
             wrap = body.closest('[data-collapse-wrapper]');
+
+            console.log(wrap);
 
             if (!id) {
                 // $('[data-collapse-wrapper]').removeClass('open');

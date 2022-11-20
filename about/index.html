@@ -217,427 +217,49 @@
         </div>
       </header>
       <main class="main_content">
-        <!-- begin firstscreen-->
-        <section class="firstscreen section" id="firstscreen">
-          <div class="container_center">
-            <div class="firstscreen__wrap">
-              <div class="swiper single single-swiper-js">
-                <div class="swiper-wrapper single__wrapper">
-                  <div class="swiper-slide single__slide">
-                    <div class="firstscreen__bg bg desktop" style="background-image: url('../../img/firstscreen_bg.webp')">
-                      <div class="firstscreen__content">
-                        <div class="firstscreen__title"><span>Пусть ваши мечты станут нашим проектом</span></div>
-                        <div class="firstscreen__action"><a class="btn btn_arrow btn_bg show_js" href="#aveQuestions"><span>Заказать проект</span></a></div>
-                      </div>
-                    </div>
-                    <div class="firstscreen__bg bg mobile" style="background-image: url('../../img/firstscreen_bg_m.webp')">
-                      <div class="firstscreen__content">
-                        <div class="firstscreen__title"><span>Пусть ваши мечты станут нашим проектом</span></div>
-                        <div class="firstscreen__action"><a class="btn btn_arrow btn_bg show_js" href="#aveQuestions"><span>Заказать проект</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide single__slide">
-                    <div class="firstscreen__bg bg desktop" style="background-image: url('../../img/firstscreen_bg.webp')">
-                      <div class="firstscreen__content">
-                        <div class="firstscreen__title"><span>Пусть ваши мечты станут нашим проектом</span></div>
-                        <div class="firstscreen__action"><a class="btn btn_arrow btn_bg show_js" href="#aveQuestions"><span>Заказать проект</span></a></div>
-                      </div>
-                    </div>
-                    <div class="firstscreen__bg bg mobile" style="background-image: url('../../img/firstscreen_bg_m.webp')">
-                      <div class="firstscreen__content">
-                        <div class="firstscreen__title"><span>Пусть ваши мечты станут нашим проектом</span></div>
-                        <div class="firstscreen__action"><a class="btn btn_arrow btn_bg show_js" href="#aveQuestions"><span>Заказать проект</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide single__slide">
-                    <div class="firstscreen__bg bg desktop" style="background-image: url('../../img/firstscreen_bg.webp')">
-                      <div class="firstscreen__content">
-                        <div class="firstscreen__title"><span>Пусть ваши мечты станут нашим проектом</span></div>
-                        <div class="firstscreen__action"><a class="btn btn_arrow btn_bg show_js" href="#aveQuestions"><span>Заказать проект</span></a></div>
-                      </div>
-                    </div>
-                    <div class="firstscreen__bg bg mobile" style="background-image: url('../../img/firstscreen_bg_m.webp')">
-                      <div class="firstscreen__content">
-                        <div class="firstscreen__title"><span>Пусть ваши мечты станут нашим проектом</span></div>
-                        <div class="firstscreen__action"><a class="btn btn_arrow btn_bg show_js" href="#aveQuestions"><span>Заказать проект</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide single__slide">
-                    <div class="firstscreen__bg bg desktop" style="background-image: url('../../img/firstscreen_bg.webp')">
-                      <div class="firstscreen__content">
-                        <div class="firstscreen__title"><span>Пусть ваши мечты станут нашим проектом</span></div>
-                        <div class="firstscreen__action"><a class="btn btn_arrow btn_bg show_js" href="#aveQuestions"><span>Заказать проект</span></a></div>
-                      </div>
-                    </div>
-                    <div class="firstscreen__bg bg mobile" style="background-image: url('../../img/firstscreen_bg_m.webp')">
-                      <div class="firstscreen__content">
-                        <div class="firstscreen__title"><span>Пусть ваши мечты станут нашим проектом</span></div>
-                        <div class="firstscreen__action"><a class="btn btn_arrow btn_bg show_js" href="#aveQuestions"><span>Заказать проект</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="single__control">
-                <div class="single__dotted"></div>
-                <div class="single__arrows desktop"><i class="icon_arrow_left"></i><i class="icon_arrow_right"></i></div>
-              </div>
-              <div class="firstscreen__el bg firstscreen__el_1 desktop"></div>
-              <div class="firstscreen__el bg firstscreen__el_2 desktop"></div>
-            </div>
+        <!-- begin breadcrumbs-->
+        <div class="breadcrumbs section">
+          <div class="container_center container_center_right">
+            <div class="kama_breadcrumbs"><span><a href="#"><span>Главная</span></a></span><span class="kb_sep"></span><span class="kb_title">О компании</span></div>
           </div>
-        </section>
-        <!-- end firstscreen-->
-        <!-- begin services-->
-        <section class="services section" id="services">
+        </div>
+        <!-- end breadcrumbs-->
+        <!-- begin questions-->
+        <section class="questions section" id="questions">
           <div class="container_center">
-            <h1>Наши услуги</h1>
-            <div class="section__content">
-              <p>Наша компания проводит работы по благоустройству; общестроительные, монолитные, земельные, инженерные и гидроизоляционные работы. </p>
-            </div>
-            <div class="services__list">
-              <div class="services__item">
-                <div class="content__collapse">
-                  <div class="collapse__title" data-collapse="">
-                    <div class="services__toggle"><i class="icon_arrow_bottom"></i></div>
+            <div class="questions__content bg">
+              <div class="questions__title"><span>Остались вопросы?</span></div>
+              <div class="questions__label"><span>Напишите нам и наш менеджер перезвонт вам в течение 24 часов</span></div>
+              <div class="questions__form">
+                <form class="form form_grid" action="send.php">
+                  <input type="hidden" name="subject" value="форма в футоре"/>
+                  <input type="hidden" name="notspam" value=""/>
+                  <div class="form__row">
+                    <div class="form__label"><span>Ваше ФИО*</span></div>
+                    <input type="text" required="required" placeholder="Напишите ваше ФИО"/>
                   </div>
-                  <div class="services__bg bg" style="background-image: url('../../img/services_1.webp')">
-                    <div class="services__title">
-                      <div class="services__icon"><i class="icon_water"></i></div><a href="#">Гидроизоляционные работы</a>
+                  <div class="form__row">
+                    <div class="form__label"><span>Введите ваш номер телефона*</span></div>
+                    <input type="text" required="required" placeholder="8 (___) ___ ____"/>
+                  </div>
+                  <div class="form__row form__row_textarea">
+                    <div class="form__label"><span>Ваш вопрос</span></div>
+                    <textarea type="text" placeholder="Опишите вашу проблему"></textarea>
+                  </div>
+                  <div class="form__row form__row_mt20">
+                    <div class="button">
+                      <button class="btn btn_callback btn_bg" type="submit"><span>Заказать звонок</span></button>
                     </div>
                   </div>
-                  <div class="collapse__body" data-collapse-body="">
-                    <div class="services__row">
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Габионы. МАФ</a></li>
-                          <li><a href="#">Укладка тротуарной плитки</a></li>
-                          <li><a href="#">Вывоз строительного мусора</a></li>
-                          <li><a href="#">Установка заборов</a></li>
-                        </ul>
-                      </div>
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Въезд на дачный участок под ключ</a></li>
-                          <li><a href="#">Мощение дорожек</a></li>
-                          <li><a href="#">Планировка рельефа</a></li>
-                          <li><a href="#">Укрепление склонов</a></li>
-                          <li><a href="#">Демонтаж фундамента</a></li>
-                          <li><a href="#">Устройство парковки</a></li>
-                        </ul>
-                      </div>
-                    </div>
+                  <div class="form__row form__row_mt20">
+                    <div class="form__text"><span>Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span></div>
                   </div>
-                </div>
-              </div>
-              <div class="services__item">
-                <div class="content__collapse">
-                  <div class="collapse__title" data-collapse="">
-                    <div class="services__toggle"><i class="icon_arrow_bottom"></i></div>
-                  </div>
-                  <div class="services__bg bg" style="background-image: url('../../img/services_2.webp')">
-                    <div class="services__title">
-                      <div class="services__icon"><i class="icon_tree"></i></div><a href="#">Благоустройство территории</a>
-                    </div>
-                  </div>
-                  <div class="collapse__body" data-collapse-body="">
-                    <div class="services__row">
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Габионы. МАФ</a></li>
-                          <li><a href="#">Укладка тротуарной плитки</a></li>
-                          <li><a href="#">Вывоз строительного мусора</a></li>
-                          <li><a href="#">Установка заборов</a></li>
-                        </ul>
-                      </div>
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Въезд на дачный участок под ключ</a></li>
-                          <li><a href="#">Мощение дорожек</a></li>
-                          <li><a href="#">Планировка рельефа</a></li>
-                          <li><a href="#">Укрепление склонов</a></li>
-                          <li><a href="#">Демонтаж фундамента</a></li>
-                          <li><a href="#">Устройство парковки</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="services__item">
-                <div class="content__collapse">
-                  <div class="collapse__title" data-collapse="">
-                    <div class="services__toggle"><i class="icon_arrow_bottom"></i></div>
-                  </div>
-                  <div class="services__bg bg" style="background-image: url('../../img/services_3.webp')">
-                    <div class="services__title">
-                      <div class="services__icon"><i class="icon_trowel"></i></div><a href="#">Общестроительные работы</a>
-                    </div>
-                  </div>
-                  <div class="collapse__body" data-collapse-body="">
-                    <div class="services__row">
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Габионы. МАФ</a></li>
-                          <li><a href="#">Укладка тротуарной плитки</a></li>
-                          <li><a href="#">Вывоз строительного мусора</a></li>
-                          <li><a href="#">Установка заборов</a></li>
-                        </ul>
-                      </div>
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Въезд на дачный участок под ключ</a></li>
-                          <li><a href="#">Мощение дорожек</a></li>
-                          <li><a href="#">Планировка рельефа</a></li>
-                          <li><a href="#">Укрепление склонов</a></li>
-                          <li><a href="#">Демонтаж фундамента</a></li>
-                          <li><a href="#">Устройство парковки</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="services__item">
-                <div class="content__collapse">
-                  <div class="collapse__title" data-collapse="">
-                    <div class="services__toggle"><i class="icon_arrow_bottom"></i></div>
-                  </div>
-                  <div class="services__bg bg" style="background-image: url('../../img/services_4.webp')">
-                    <div class="services__title">
-                      <div class="services__icon"><i class="icon_monolithic"></i></div><a href="#">Монолитные работы</a>
-                    </div>
-                  </div>
-                  <div class="collapse__body" data-collapse-body="">
-                    <div class="services__row">
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Габионы. МАФ</a></li>
-                          <li><a href="#">Укладка тротуарной плитки</a></li>
-                          <li><a href="#">Вывоз строительного мусора</a></li>
-                          <li><a href="#">Установка заборов</a></li>
-                        </ul>
-                      </div>
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Въезд на дачный участок под ключ</a></li>
-                          <li><a href="#">Мощение дорожек</a></li>
-                          <li><a href="#">Планировка рельефа</a></li>
-                          <li><a href="#">Укрепление склонов</a></li>
-                          <li><a href="#">Демонтаж фундамента</a></li>
-                          <li><a href="#">Устройство парковки</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="services__item">
-                <div class="content__collapse">
-                  <div class="collapse__title" data-collapse="">
-                    <div class="services__toggle"><i class="icon_arrow_bottom"></i></div>
-                  </div>
-                  <div class="services__bg bg" style="background-image: url('../../img/services_5.webp')">
-                    <div class="services__title">
-                      <div class="services__icon"><i class="icon_machine"></i></div><a href="#">Земляные работы</a>
-                    </div>
-                  </div>
-                  <div class="collapse__body" data-collapse-body="">
-                    <div class="services__row">
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Габионы. МАФ</a></li>
-                          <li><a href="#">Укладка тротуарной плитки</a></li>
-                          <li><a href="#">Вывоз строительного мусора</a></li>
-                          <li><a href="#">Установка заборов</a></li>
-                        </ul>
-                      </div>
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Въезд на дачный участок под ключ</a></li>
-                          <li><a href="#">Мощение дорожек</a></li>
-                          <li><a href="#">Планировка рельефа</a></li>
-                          <li><a href="#">Укрепление склонов</a></li>
-                          <li><a href="#">Демонтаж фундамента</a></li>
-                          <li><a href="#">Устройство парковки</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="services__item">
-                <div class="content__collapse">
-                  <div class="collapse__title" data-collapse="">
-                    <div class="services__toggle"><i class="icon_arrow_bottom"></i></div>
-                  </div>
-                  <div class="services__bg bg" style="background-image: url('../../img/services_6.webp')">
-                    <div class="services__title">
-                      <div class="services__icon"><i class="icon_crane"></i></div><a href="#">Инженерные сети</a>
-                    </div>
-                  </div>
-                  <div class="collapse__body" data-collapse-body="">
-                    <div class="services__row">
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Габионы. МАФ</a></li>
-                          <li><a href="#">Укладка тротуарной плитки</a></li>
-                          <li><a href="#">Вывоз строительного мусора</a></li>
-                          <li><a href="#">Установка заборов</a></li>
-                        </ul>
-                      </div>
-                      <div class="services__col">
-                        <ul>
-                          <li><a href="#">Въезд на дачный участок под ключ</a></li>
-                          <li><a href="#">Мощение дорожек</a></li>
-                          <li><a href="#">Планировка рельефа</a></li>
-                          <li><a href="#">Укрепление склонов</a></li>
-                          <li><a href="#">Демонтаж фундамента</a></li>
-                          <li><a href="#">Устройство парковки</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </section>
-        <!-- end services-->
-        <!-- begin discount-->
-        <section class="discount section bg" id="discount">
-          <div class="container_center">
-            <div class="discount__wrap">
-              <div class="discount__number big_number">
-                <div class="number"><span>5</span><i>5</i></div>
-              </div>
-              <div class="discount__content">
-                <div class="discount__title"><span>Скидка на строительные  работы до конца октября</span></div>
-                <div class="discount__label"><span>При заказе строительства дома под ключ*</span></div>
-                <div class="discount__action"><a class="btn btn_arrow btn_bg show_js" href="#aveQuestions"><span>Получить скидку</span></a></div>
-              </div>
-              <div class="discount__circle discount__circle_center desktop"></div>
-            </div>
-          </div>
-          <div class="discount__sheet bg discount__sheet_1"></div>
-          <div class="discount__sheet bg discount__sheet_2 desktop"></div>
-          <div class="discount__sheet bg discount__sheet_3 desktop"></div>
-          <div class="discount__circle bg discount__circle_left desktop"></div>
-          <div class="discount__circle bg discount__circle_right desktop"></div>
-        </section>
-        <!-- end discount-->
-        <!-- begin about-->
-        <section class="about section" id="about">
-          <div class="container_center">
-            <h2>О компании</h2>
-            <div class="about__content">
-              <div class="section__content">
-                <p>ООО «Дан-Строй» - организация, которая специализируется на техническом ремонте, общестроительных работах и комплексном благоустройстве территории. Компания осуществляет деятельность на территории Санкт-Петербурга и Ленинградской области.</p>
-                <p>Сотрудничая с нами, каждый клиент получает индивидуально разработанный проект, в котором учитываются все ключевые особенности объекта, в том числе и почвенную специфику локации. Во главе «Дан-Строй» стоят люди, которые имеют практический строительный опыт.</p>
-                <p>В основе нашей благополучной работы лежит репутация. Мы делаем все возможное, чтобы вы остались довольны качеством оказываемых услуг. Обратившись к нам, вы гарантированно получаете ответственного и надежного партера.</p>
-              </div>
-              <div class="section__content">
-                <p>Мы сделаем все возможное, чтобы наши сотрудничество было продуктивным и долгосрочным. Обращаясь к нам, вы получаете:</p>
-                <ul>
-                  <li>Гарантию на оказанные услуги;</li>
-                  <li>Максимально сжатые сроки;</li>
-                  <li>Договор, в котором оговорены все ключевые моменты;</li>
-                  <li>Адекватную стоимость услуг;</li>
-                  <li>Гибкую ценовую политику;</li>
-                  <li>Комплексное выполнение услуг.</li>
-                </ul>
-                <p>В ООО «Дан-Строй» вам смогут выполнить земляные, общестроительные, гидроизоляционные, инженерные, монолитные работы, благоустроить территорию.</p>
-              </div>
-            </div>
-            <div class="about__action"><a class="btn" href="#"><span>Подробее о компании</span></a></div>
-          </div>
-        </section>
-        <!-- end about-->
-        <!-- begin advantages-->
-        <section class="advantages section" id="advantages">
-          <div class="container_center">
-            <h2>Наши преимущества</h2>
-            <div class="advantages__list">
-              <div class="advantages__item">
-                <div class="advantages__img advantages__img_speed img"><img src="../img/advantages_1.svg"/></div>
-                <div class="advantages__text"><span><b>Скорость</b></span><span>Мы гарантируем быстрое обслуживание</span></div>
-              </div>
-              <div class="advantages__item">
-                <div class="advantages__img advantages__img_experience img"><img src="../img/advantages_2.svg"/></div>
-                <div class="advantages__text"><span><b>Опыт работы</b></span><span>Мы работаем в России уже более 20 лет!</span></div>
-              </div>
-              <div class="advantages__item">
-                <div class="advantages__img advantages__img_quality img"><img src="../img/advantages_3.svg"/></div>
-                <div class="advantages__text"><span><b>Качество</b></span><span>Гарантия качества 100% на все виды<br> услуг в нашей компании</span></div>
-              </div>
-              <div class="advantages__item">
-                <div class="advantages__img advantages__img_expert img"><img src="../img/advantages_4.svg"/></div>
-                <div class="advantages__text"><span><b>Специалисты</b></span><span>У нас работают только дипломированные<br> специалисты!</span></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end advantages-->
-        <!-- begin steps-->
-        <section class="steps section" id="steps">
-          <div class="container_center">
-            <h2>Четыре простых шага для вызова мастера</h2>
-            <div class="steps__list">
-              <div class="steps__item">
-                <div class="steps__img"><img src="../img/step_1.svg"/></div>
-                <div class="steps__text"><span>Вы оставляете заявку на сайте  или по телефону</span></div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__img"><img src="../img/step_2.svg"/></div>
-                <div class="steps__text"><span>Менеджер свяжется с вами для обсуждения деталей</span></div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__img"><img src="../img/step_3.svg"/></div>
-                <div class="steps__text"><span>Определение вида техники, согласование проекта</span></div>
-              </div>
-              <div class="steps__item">
-                <div class="steps__img"><img src="../img/step_4.svg"/></div>
-                <div class="steps__text"><span>Заключение договора, доставка техники на объект</span></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end steps-->
-        <!-- begin ourwork-->
-        <section class="ourwork section" id="ourwork">
-          <div class="container_center">
-            <div class="ourwork__content">
-              <div class="ourwork__left">
-                <h3>Немного о качестве нашей работы</h3>
-                <div class="section__content">
-                  <p>Когда мы вместе с заказчиком проектируем будущий участок, то в первую очередь говорим и думаем о будущем. Наша главная задача - учесть интересы всех членов семьи и создать пространство для жизни, которое будет приносить пользу и радость будущим поколениям ООО «Дан-Строй» - организация, которая специализируется на техническом ремонте, общестроительных работах и комплексном благоустройстве территории. Мы работаем на территории Санкт-Петербурга и Ленинградской области.</p>
-                  <p>Репутация для нас - самое главное. Мы сделаем все возможное, чтобы сотрудничество было максимально продуктивным и долгосрочным. Будьте уверены, что, работая с нами, вы получаете ответственного и надежного партнера.</p>
-                  <p>Для каждого клиента мы разрабатываем индивидуальный проект, в котором учитываем все ключевые особенности объекта, в том числе и почвенную специфику локации.</p>
-                  <p>Обращаясь к нам, все ваши запросы будут выполнены. Мы с радостью поможет вам в строительных работах.</p>
-                </div>
-                <div class="ourwork__lider">
-                  <div class="lider">
-                    <div class="lider__name"><span>Сергей Сергеев</span></div>
-                    <div class="lider__info"><span>руководитель компании Дан Строй</span></div>
-                  </div>
-                </div>
-                <div class="ourwork__action"><a class="btn btn_bg btn_arrow show_js" href="#directorq"><span>Написать директору</span></a></div>
-              </div>
-              <div class="ourwork__right">
-                <div class="ourwork__bg bg">
-                  <div class="lider__foto bg" style="background-image: url('../../img/lider.webp')"></div>
-                  <div class="ourwork__el bg ourwork__el_1"></div>
-                  <div class="ourwork__el bg ourwork__el_2"></div>
-                  <div class="ourwork__el bg ourwork__el_3"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end ourwork-->
+        <!-- end questions-->
       </main>
       <div class="toTop"><a href="#wrapper"> <i class="icon_arrow_top"></i></a></div>
       <footer class="footer">

@@ -53,7 +53,7 @@
         align-items: center;
         border-radius: 1em;
         min-height: 5.0625em;
-        padding: 1em 1.25em;
+        padding: 1em 5em 1em 1.25em;
         @media (min-width: 768px) {
             min-height: 7.5em;
             padding: 1em 1em 1em 2.375em;
@@ -83,16 +83,11 @@
         line-height: 1.1;
 
         a {
-            position: relative;
-            z-index: 20;
             text-decoration: none;
             color: $color_white;
             font-size: 1.125em;
-            min-width: 13em;
             @media (min-width: 768px) {
                 font-size: 1.5em;
-                min-width: inherit;
-
             }
         }
 
@@ -100,6 +95,7 @@
 
     &__icon {
         margin-right: 0.9375em;
+
         @media (min-width: 768px) {
             margin-right: 1.5em;
         }
@@ -114,9 +110,12 @@
     }
 
     &__toggle {
-
+        padding: 0.75em;
+        color: $color_white;
         transform: scale(1);
         transition: transform 0.3s;
+        cursor: pointer;
+
         @media (min-width: 768px) {
             display: none;
         }
@@ -132,7 +131,7 @@
 
             display: flex;
             justify-content: space-between;
-            gap: 1.5em;
+            gap: 1em;
 
         }
     }
@@ -161,16 +160,37 @@
             text-decoration: none;
             color: $color_info;
 
+            @media (min-width: 768px) {
+                position: relative;
+            }
+
             &:after {
                 content: '\e903';
                 font-family: 'icomoon';
                 font-size: 0.75em;
                 margin-left: 0.5em;
 
+                @media (min-width: 768px) {
+                    position: absolute;
+                    margin-top: 0.5em;
+                    // top: 1em;
+
+                    display: inline-block;
+                    transition: 0.3s;
+
+                }
             }
 
             &:hover {
                 color: #208FA7;
+
+                @media (min-width: 768px) {
+                    &:after {
+                        margin-left: 0.75em;
+
+                    }
+                }
+
             }
         }
     }
@@ -178,20 +198,27 @@
 }
 
 .services {
-    .content__collapse {
-        @media (min-width: 768px) {
-            position: relative;
+    .services__item {
+        position: relative;
 
-            &:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 5;
-            }
+        @media (min-width: 768px) {
+            position: initial;
         }
+    }
+
+    .collapse__title {
+        @media (max-width: 767px) {
+            position: absolute;
+            top: 1.25em;
+
+            right: 1em;
+            z-index: 1;
+
+        }
+        @media (min-width: 768px) {
+            display: none;
+        }
+
     }
 
     .collapse {

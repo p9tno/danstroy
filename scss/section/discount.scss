@@ -143,6 +143,8 @@
         @media (min-width: 768px) {
             margin-left: auto;
             width: 34em;
+            position: relative;
+            z-index: 1;
         }
     }
 

@@ -318,7 +318,11 @@
 		}
 	}
 
-	&__info {}
+	&__info {
+		.info__label a {
+			color: $color_white;
+		}
+	}
 
 	&__action {
 		padding: 1.25em 0.9375em;

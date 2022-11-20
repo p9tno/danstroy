@@ -55,14 +55,15 @@ block content
                         .content__collapse
 
                             .collapse__title(data-collapse="")
+                                .services__toggle
+                                    i.icon_arrow_bottom
 
-                                .services__bg.bg(style="background-image: url('../../img/services_"+item.bg+".webp')")
-                                    .services__title
-                                        .services__icon!=item.icon
-                                            //- i.icon_water
-                                        a(href="#")=item.title
-                                        .services__toggle
-                                            i.icon_arrow_bottom
+                            .services__bg.bg(style="background-image: url('../../img/services_"+item.bg+".webp')")
+                                .services__title
+                                    .services__icon!=item.icon
+                                        //- i.icon_water
+                                    a(href="#")=item.title
+
 
                             .collapse__body(data-collapse-body="")
 
@@ -102,7 +103,7 @@ block content
                     .discount__label
                         span При заказе строительства дома под ключ*
                     .discount__action
-                        a.btn.btn_arrow.btn_bg(href="#")
+                        a.btn.btn_arrow.btn_bg.show_js(href="#aveQuestions")
                             span Получить скидку
 
                 .discount__circle.discount__circle_center.desktop

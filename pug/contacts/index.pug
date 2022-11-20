@@ -1,0 +1,70 @@
+extends ../layout/layout.pug
+block variable
+    -var path = '../';
+
+
+block content
+    // begin breadcrumbs
+    .breadcrumbs.section
+        .container_center.container_center_right
+            .kama_breadcrumbs
+                span
+                    a(href="#")
+                        span Главная
+
+                span.kb_sep
+
+                span.kb_title Контакты
+
+    // end breadcrumbs
+
+
+    // begin questions
+    section#questions.questions.section
+        .container_center
+            .questions__content.bg
+                .questions__title
+                    span Остались вопросы?
+                .questions__label
+                    span Напишите нам и наш менеджер перезвонт вам в течение 24 часов
+                .questions__form
+                    form.form.form_grid(action="send.php")
+                        //- из какой формы на сайте
+                        input(type="hidden" name="subject" value="форма в футоре")
+                        //- проверка спама
+                        input(type="hidden" name="notspam" value="")
+
+
+
+                        .form__row
+                            .form__label
+                                span Ваше ФИО*
+                            input(type="text", required placeholder="Напишите ваше ФИО")
+
+
+                        .form__row
+                            .form__label
+                                span Введите ваш номер телефона*
+                            input(type="text", required placeholder="8 (___) ___ ____")
+
+                        .form__row.form__row_textarea
+                            .form__label
+                                span Ваш вопрос
+                            textarea(type="text", placeholder="Опишите вашу проблему")
+
+
+                        .form__row.form__row_mt20
+                            .button
+                                button.btn.btn_callback.btn_bg(type="submit")
+                                    span Заказать звонок
+
+                        .form__row.form__row_mt20
+                            .form__text
+                                span Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+
+                        //- .form__row.form__row_mb0
+                        //-     .form__success
+                        //-         span Спасибо за обращение!
+
+
+    // end questions
