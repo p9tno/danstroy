@@ -2679,6 +2679,9 @@ body {
     color: rgba(15, 105, 124, 0.7);
   }
 }
+.contacts__item .payment {
+  justify-content: flex-start;
+}
 .contacts__label {
   margin-bottom: 0.75em;
 }
