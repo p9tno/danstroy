@@ -1,0 +1,16 @@
+.yandexRecal {
+    &__content {
+
+        margin-top: 1.5625em;
+        @media (min-width: 768px) {
+            width: 47.5em;
+            margin: 3.125em auto 0;
+
+        }
+
+        div {
+            width: 100%!important;
+        }
+
+    }
+}

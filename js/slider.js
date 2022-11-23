@@ -201,3 +201,50 @@ function addSliders() {
 
 }
 addSliders();
+
+
+
+// BEGIN project
+    const desc_sm = new Swiper(".desc-sm-swiper-js", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        allowTouchMove: true,
+        clickable: true,
+        centeredSlides: true,
+        loop: true,
+
+
+        freeMode: true,
+        watchSlidesProgress: true,
+
+        breakpoints: {
+           768: {
+               centeredSlides: false,
+               allowTouchMove: false,
+               // clickable: true,
+           },
+       }
+
+
+    });
+
+    const desc = new Swiper(".desc-swiper-js", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        allowTouchMove: false,
+        loop: true,
+
+        navigation: {
+            nextEl: '.icon_arrow_right',
+            prevEl: '.icon_arrow_left',
+        },
+
+        pagination: {
+            el: '.project__dotted',
+        },
+
+        thumbs: {
+            swiper: desc_sm,
+        },
+    });
+    // END project

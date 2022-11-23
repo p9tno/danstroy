@@ -23,7 +23,255 @@ block content
 
     // end breadcrumbs
 
+    // begin description
+    section#description.description.section
+        .container_center
+            h2.section__title 
+            .description__content
+                .description__left
+                    .description__top
+                        .swiper.description__slider.desc-swiper-js
+                            .swiper-wrapper
+                                each item in [1,1,1,1,1,1]
+                                    .swiper-slide
+                                        .description__img.img
+                                            img(src="../img/description.jpg")
+
+                    .description__bottom
+                        .swiper.description__slider_sm.desc-sm-swiper-js
+                            .swiper-wrapper
+                                each item in [1,1,1,1,1,1]
+                                    .swiper-slide
+                                        .description__img.img
+                                            img(src="../img/description.jpg")
+                        .description__control.desktop
+                            i.icon_arrow_left
+                            i.icon_arrow_right
+
+
+                .description__right
+                    h1 Укрепление склонов
+                    .description__list
+                        .description__item
+                            .description__label
+                                span Категория
+                            .description__text
+                                span Благоустройство территории
+                        .description__item
+                            .description__label
+                                span Вид работ
+                            .description__text
+                                span Планировка рельефа
+
+
+                    .section__content
+                        p Если вы решили произвести демонтаж стяжки пола в квартире, рекомендуем обратиться в компанию «Мусоровоз-СПб». Специалисты не советуют демонтировать основания без веских причин. 
+                        p Эти работы проводятся в случаях, когда резко ухудшилось состояние перекрытия, если планируется установить систему теплого пола, если необходимо поднять уровень основания или заменить спрятанные в бетонную стяжку коммуникации. Если же потребность в замене стяжки все же возникла, лучше обратиться к профессионалам.
+
+                    .description__more
+                        a(href="#") Читать далее
+
+    // end description
+
+    // begin calc
+    section#calc.calc.section
+        .container_center
+            h2 Цены на земельные работы
+            .calc__content
+                .calc__left
+                .calc__right
+
+    // end calc
+
+    // begin descriptionMore
+    section#descriptionMore.descriptionMore.section
+        .container_center
+            h2 Описание
+            .section__content
+                p Демонтаж бетонной стяжки – это комплексное мероприятие, необходимо провести следующие работы: 
+
+                ul
+                    li вынести из помещений мебель; 
+                    li отключить коммуникации; 
+                    li закрыть укрывным материалом окна, светильными; 
+                    li произвести демонтаж цементной стяжки;
+                    li убрать фрагменты цемента;
+                    li вынести и погрузить мусор в машину, вывезти на полигон.
+
+                p  В компании «Мусоровоз-СПб» можно заказать не только разбору основания, но и вынос мусора из квартиры с последующим вывозом на полигон. Работы проводятся в специальном снаряжении и с использованием ударного оборудования. Также требуется соблюдать меры безопасности и проводить разборку стяжки предельно внимательно и аккуратно. 
+                p Расценки зависит от объема работ, учитывается толщина покрытия, наличие коммуникаций и арматуры, степень разрушения. Удаление стяжки может производиться разными способами: 
+
+                ul
+                    li с помощью силового ударного оборудования; 
+                    li используя метод бурения; 
+                    li методом резки.
+                    li После того как мастер произведет осмотр объекта и выберет метода демонтажа, можно говорить, во сколько обойдутся услуги.
+
+
+    // end descriptionMore
+
+    // begin picture
+    section#picture.picture.section
+        .container_center
+            h2 Фото до и после
+            .picture__content
+                .picture__beforeAfter.twentytwenty-container
+                    img(src="../../img/examples_1.jpg" loading="lazy")
+                    img(src="../../img/examples_3.jpg" loading="lazy")
+
+    // end picture
+
+    // begin season
+    section#season.season.section
+        .container_center
+            h2 Сезонность работ
+            .season__months
+                .season__month
+                    span Январь
+                .season__month
+                    span Февраль
+                .season__month
+                    span Март
+                .season__month.danger
+                    span Апрель
+                .season__month.danger
+                    span Май
+                .season__month.success
+                    span Июнь
+                .season__month.success
+                    span Июль
+                .season__month.success
+                    span Август
+                .season__month.success
+                    span Сентябрь
+                .season__month.success
+                    span Октябрь
+                .season__month.danger
+                    span Ноябрь
+                .season__month
+                    span Декабрь
+
+
+            .season__info
+                span Работы не проводятся
+                span.success Оптимальное время работы
+                span.danger Работать можно при отсутствии морозов
+
+
+
+    // end season
+
+    // begin benefits
+    section#benefits.benefits.section
+        .container_center
+            h2 Преимущества работы с компанией Дан-Строй
+            .section__content
+                p Обращаясь в компанию «Дан-Строй», вы получаете качественные услуги. Мы уверяем вас, что работы будут произведены аккуратно и быстро. Среди наших преимуществ надо отметить и низкие расценки. Мы принимаем заявки в режиме 7/24, разборка цементно-песчаной стяжки производится только в разрешенные законодательством РФ часы. Вам срочно необходим демонтаж старой стяжки, звоните, и наши специалисты прибудут на объект в течение часа.
+            .benefits__list
+                .benefits__item
+
+                    .benefits__icon
+                        i.icon_speed
+                    .benefits__content
+                        .benefits__label
+                            span Скорость
+                        .benefits__text
+                            span Мы гарантируем быстрое обслуживание
+
+                .benefits__item
+                    .benefits__icon
+                        i.icon_hand
+                    .benefits__content
+                        .benefits__label
+                            span Опыт работы
+                        .benefits__text
+                            span Мы работаем в России уже  более 20 лет!
+
+                .benefits__item
+                    .benefits__icon
+                        i.icon_medal
+                    .benefits__content
+                        .benefits__label
+                            span Качество
+                        .benefits__text
+                            span Гарантия качества 100% на все виды услуг в нашей компании
+
+                .benefits__item
+                    .benefits__icon
+                        i.icon_star
+                    .benefits__content
+                        .benefits__label
+                            span Специалисты
+                        .benefits__text
+                            span У нас работают только дипломированные специалисты!
+
+
+    // end benefits
+
+
+    // begin examples
+    section#examples.examples.section
+        .container_center
+            h2 Похожие проекты
+
+            .examples__grid
+                each item in [ 'Заливка фундамента под дом п. Каушта (Полный комплекс)', 'Укрепление склонов п. Каушта', 'Гидроизоляция в Сосново' ]
+
+
+                    .examples__item.data_js
+
+                        .examples__gallery
+
+                            .gallery
+                                .swiper.gallerySwiper.gallerySwiper-js
+                                    .swiper-wrapper
+                                        each item in [1,2,3]
+                                            .swiper-slide
+                                                .gallery__item
+                                                    a.gallery__link.img.gallery_js(href="#" data-modal="")
+                                                        img(src="../img/examples_"+item+".jpg" loading="lazy")
+
+                                    .gallerySwiperModal__dotted.single__dotted_white
+
+                                // Begin Modal modalGallery
+                                .modal.fade.modalGallery( id="")
+                                    .modal-dialog
+                                        .modal-content
+                                            a(href="#" class="modal-close" data-dismiss="modal")
+                                            .modal-body
+                                                .swiper.gallerySwiperModal.gallerySwiperModal-js
+                                                    .swiper-wrapper
+                                                        each item in [1,2,3]
+                                                            .swiper-slide
+                                                                .gallery__item.img
+                                                                    img(src="../img/examples_"+item+".jpg" loading="lazy")
+                                                .modalGallery__control
+
+                                                    i.icon_arrow_left
+                                                    i.icon_arrow_right
+
+                                                .gallerySwiper__dotted.single__dotted_white
+
+                                // End modal modalGallery
+
+
+                        .examples__content
+                            .examples__title
+                                span!=item
+                            ul.examples__list.list
+                                each item in [ {label: 'Категория', text: 'Общестроительные работы'}, {label: 'Вид работ', text: 'Заливка фундамента'}, {label: 'Стоимость', text: '150 000 ₽'} ]
+                                    li
+                                        .examples__label
+                                            span!=item.label 
+                                        .examples__text
+                                            span!=item.text
+
+
     // end examples
+
+
+
+
 
     // begin questions
     section#questions.questions.section

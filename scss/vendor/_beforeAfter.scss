@@ -1,0 +1,72 @@
+.picture__beforeAfter {
+    .twentytwenty-handle {
+        width: 3.125em;
+        height: 3.125em;
+        margin-left: -1.6em;
+
+        border: none;
+        border-radius: 50%;
+        background-color: rgba($color_white, 0.6);
+        backdrop-filter: blur(8.5px);
+
+        border: 0.125em solid $color_white;
+
+        &:after,
+        &:before {
+            width: 0.125em;
+            margin-left: -0.125em;
+            margin-top: 1.9em;
+            margin-bottom: 1.9em;
+
+        }
+
+        font-size: 0.6em;
+        @media (min-width: 768px) {
+            font-size: 1em;
+
+        }
+    }
+
+    .twentytwenty-left-arrow {
+        border: 0;
+        margin: 0;
+        right: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (min-width: 768px) {
+            transform: translate(-50%, -40%);
+
+        }
+
+        width: auto;
+        height: auto;
+
+        &:after,
+        &:before {
+            font-family: 'icomoon';
+            font-size: 0.9375em;
+            color: $color_white;
+
+        }
+
+        &:before {
+            content: '\e901';
+            margin-right: 0.5em;
+
+        }
+
+        &:after {
+            content: '\e903';
+
+        }
+    }
+
+    .twentytwenty-right-arrow {
+        margin: 0;
+        border: 0;
+        display: none;
+
+    }
+}
