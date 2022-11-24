@@ -77,9 +77,105 @@ block content
     section#calc.calc.section
         .container_center
             h2 Цены на земельные работы
-            .calc__content
-                .calc__left
-                .calc__right
+            .calc__table
+                .table.js-calc-table
+                    .table__wrap
+                        .table__head
+                            .table__row
+                                .table__col.table__col_1
+                                    span Наименование работ
+                                .table__col.table__col_2
+                                    span Цена за м<sup>2</sup>
+                                .table__col.table__col_3
+                                    span Введите количество
+                                .table__col.table__col_4
+                                    span Сумма — Калькулятор
+
+                        .table__body
+
+                            each item in ['Въезд на дачный участок под ключ', 'Планировка рельефа', 'Демонтаж фундамента', 'Устройство парковки']
+
+                                .table__row.content__collapse
+
+                                    .table__col.table__col_1.collapse__title(data-collapse="")
+                                        span=item
+                                        .table__toggle.mobile
+                                            i.icon_arrow_bottom
+
+                                    .collapse__body(data-collapse-body="")
+                                        .table__col.mobile
+                                            .table__label
+                                                span Наименование работ
+                                            span=item
+
+                                        .table__col.table__col_2
+                                            .table__label.mobile
+                                                span Цена за м<sup>2</sup>
+                                            span 350 РУБ
+
+                                        .table__col.table__col_3.table__col_input
+                                            .table__label.mobile
+                                                span Количество
+                                            .table__input
+                                                //- button(type="button" class="btn__qty quantity_plus")
+                                                //-     i.icon_arrow_top
+
+                                                input.number_shipments_js(type="number" placeholder="0")
+
+                                                //- button(type="button" class="btn__qty quantity_minus")
+                                                //-     i.icon_arrow_bottom
+
+                                            span м<sup>2</sup>
+
+                                        .table__col.table__col_4
+                                            .table__label.mobile
+                                                i.icon_calc
+                                                span Сумма  Калькулятор
+
+                                            span(data-price="350") 0
+
+
+            .calc__bottom.js-calc-table-bottom
+                .container_center
+                    .calc__form
+                        form.form.form_calc(action="send.php")
+                            //- из какой формы на сайте
+                            input(type="hidden" name="subject" value="форма в футоре")
+                            //- проверка спама
+                            input(type="hidden" name="notspam" value="")
+
+
+
+                            .form__row
+                                .form__label.mobile
+                                    span Стоимость работ
+                                .form__text.js-calc-table-result
+                                    p.desktop Итоговая стоимость выбранных работ — &nbsp
+                                    b 35 000
+
+
+                            .form__row.desktop
+                                .form__text
+                                    span Введите ваш номер телефона
+                            .form__row
+                                .form__label.mobile
+                                    span Введите ваш номер телефона*
+                                input.tel(type="text", required placeholder="8 (___) ___ ____")
+
+                            .form__row 
+                                .button
+                                    button.btn.btn_bg(type="submit")
+                                        span Сделать заказ
+
+
+
+
+
+
+
+
+
+
 
     // end calc
 
@@ -214,7 +310,7 @@ block content
         .container_center
             h2 Похожие проекты
 
-            .examples__grid
+            .examples__grid.examples__grid_single
                 each item in [ 'Заливка фундамента под дом п. Каушта (Полный комплекс)', 'Укрепление склонов п. Каушта', 'Гидроизоляция в Сосново' ]
 
 

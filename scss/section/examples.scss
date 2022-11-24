@@ -21,6 +21,33 @@
 
         }
 
+        &_single {
+            margin-top: 1.875em;
+
+            @media (max-width: 767px) {
+                margin: 1.25em -0.9375em 0.625em;
+                padding-bottom: 1em;
+
+                overflow-x: scroll;
+
+                display: flex;
+
+                .examples__item {
+                    flex: none;
+                    width: 24em;
+                    margin: 0 0.9375em;
+
+                    &:first-child {
+                        margin-left: 1.25em;
+                    }
+
+                    &:last-child {
+                        margin-right: 1.25em;
+                    }
+                }
+            }
+        }
+
     }
 
     &__item {

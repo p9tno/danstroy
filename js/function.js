@@ -187,6 +187,12 @@ $(document).ready(function() {
     }
     collapsed();
 
+    // .content__collapse
+    //
+    //     .collapse__title(data-collapse="")
+    //
+    //     .collapse__body(data-collapse-body="")
+
 
     function doTabs() {
         $('.tabs__item').on('click', function() {
@@ -300,6 +306,10 @@ $(document).ready(function() {
         move_slider_on_hover: false, // двигать "бегунок" слайдера вместе с курсором мыши
         move_with_handle_only: true, // двигать слайдер только за его "бегунок"
         click_to_move: false // разрешить перемещение "бегунка" слайдера по клику на изображении
+    });
+
+    $(function(){
+        $(".tel").mask("8 (999) 999 9999");
     });
 
 })
