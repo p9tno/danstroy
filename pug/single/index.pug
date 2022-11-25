@@ -116,14 +116,16 @@ block content
                                         .table__col.table__col_3.table__col_input
                                             .table__label.mobile
                                                 span Количество
+
+
                                             .table__input
-                                                //- button(type="button" class="btn__qty quantity_plus")
-                                                //-     i.icon_arrow_top
+                                                button(type="button" class="btn__qty quantity_plus")
+                                                    i.icon_arrow_top
 
-                                                input.number_shipments_js(type="number" placeholder="0")
+                                                input.number_shipments_js(type="number" placeholder="0" min="0" max="1000" step="1")
 
-                                                //- button(type="button" class="btn__qty quantity_minus")
-                                                //-     i.icon_arrow_bottom
+                                                button(type="button" class="btn__qty quantity_minus")
+                                                    i.icon_arrow_bottom
 
                                             span м<sup>2</sup>
 
@@ -132,7 +134,7 @@ block content
                                                 i.icon_calc
                                                 span Сумма  Калькулятор
 
-                                            span(data-price="350") 0
+                                            span(data-price="350")
 
 
             .calc__bottom.js-calc-table-bottom

@@ -3447,6 +3447,42 @@ body {
   margin-top: -0.25em;
 }
 
+/* input type number */
+.input-number {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #E5E8EE;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #424348;
+  font-size: 14px;
+  text-align: center;
+  width: calc(33px * 3);
+}
+
+.input-number__input {
+  background: #E5E8EE;
+  width: 32px;
+  height: 32px;
+  border: none;
+  padding: 8px;
+  text-align: center;
+}
+
+.input-number__minus,
+.input-number__plus {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+/* /input type number */
 /* Footer
  ----------------------------------------------------------------------------- */
 .footer .menu,
@@ -4482,11 +4518,20 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   z-index: 10;
   bottom: 2em;
   right: 1em;
+  transition: 0.3s;
 }
 @media (min-width: 768px) {
   .toTop {
     bottom: 5em;
     right: 2em;
+  }
+}
+.toTop.calc_active {
+  bottom: 11em;
+}
+@media (min-width: 768px) {
+  .toTop.calc_active {
+    bottom: 7em;
   }
 }
 .toTop a {

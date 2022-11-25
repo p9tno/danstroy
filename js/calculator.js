@@ -8,6 +8,7 @@ jQuery(function($){
         let table = $('.js-calc-table');
         let bottom = $('.js-calc-table-bottom');
         let rezult = $('.js-calc-table-result');
+        let btn_to_top = $('.toTop');
         let total;
 
         // bottom.hide();
@@ -31,6 +32,7 @@ jQuery(function($){
                     total += summ;
                 } else {
                     $(el).val('');
+                    // $(el).val(0);
                     price.text('');
                 }
 
@@ -41,6 +43,7 @@ jQuery(function($){
             } else {
                 // bottom.hide();
                 bottom.removeClass('calc__bottom_show');
+                btn_to_top.removeClass('calc_active');
             }
 
         }
@@ -49,6 +52,7 @@ jQuery(function($){
             // bottom.show();
 
             bottom.addClass('calc__bottom_show');
+            btn_to_top.addClass('calc_active');
 
             $('[name="calc-sum"]').val(total);
             rezult.html(`<p class="desktop">Итоговая стоимость выбранных работ — &nbsp</p> <b>${thousandSeparator(total)}</b><p>&nbsp РУБ</p>`);
@@ -75,51 +79,47 @@ jQuery(function($){
             return output;
         };
     }
+
+    function initQuantity() {
+        $(document.body).on('click', 'button.quantity_minus, button.quantity_plus', function() {
+
+            let qty = $(this).parent().find( 'input' );
+
+            let	val = parseInt( qty.val() );
+            let	min = parseInt( qty.attr( 'min' ) );
+            let	max = parseInt( qty.attr( 'max' ) );
+            let	step = parseInt( qty.attr( 'step' ) );
+
+            if (!val) {
+                val = 0;
+            }
+
+            if ( $( this ).is( '.quantity_plus' ) ) {
+                if ( max && ( max <= val ) ) {
+                    qty.val( max );
+                } else {
+                    qty.val( val + step );
+                    $('.number_shipments_js').change();
+
+                }
+
+            } else {
+                if ( min && ( min >= val ) ) {
+                    qty.val( min );
+                } else if ( val > 0 ) {
+                    qty.val( val - step );
+                    $('.number_shipments_js').change();
+
+                }
+            }
+
+        });
+    }
+    initQuantity();
+
+    // $('.number_shipments_js').on('input', function() {
+    //   $(this).val((i, v) => Math.max(this.min, Math.min(this.max, v)));
+    // });
+
+
 });
-
-
-// function initQuantity() {
-//      $(document.body).on('click', 'button.quantity_minus, button.quantity_plus', function() {
-//         console.log('click');
-//         // let cart = $(this).parents('gty').change();
-//         let qty = $(this).parent().find( 'input' );
-//
-//         console.log(qty);
-//
-//         let	val = parseInt( qty.val() );
-//         let	min = parseInt( qty.attr( 'min' ) );
-//         let	max = parseInt( qty.attr( 'max' ) );
-//         let	step = parseInt( qty.attr( 'step' ) );
-//
-//         // дальше меняем значение количества в зависимости от нажатия кнопки
-//         if ( $( this ).is( '.quantity_plus' ) ) {
-//             if ( max && ( max <= val ) ) {
-//                 qty.val( max );
-//             } else {
-//                 qty.val( val + step );
-//             }
-//
-//         } else {
-//             if ( min && ( min >= val ) ) {
-//                 qty.val( min );
-//             } else if ( val > 1 ) {
-//                 qty.val( val - step );
-//             }
-//         }
-//
-//
-//         let quantity = qty.val();
-//         // // изменения для корзины
-//         // qty.val( quantity ).change();
-//         // console.log('change');
-//      });
-// }
-// initQuantity();
-
-// $('.number_shipments_js').on('input', function() {
-//   $(this).val((i, v) => Math.max(this.min, Math.min(this.max, v)));
-// });
-
-
-
-// });

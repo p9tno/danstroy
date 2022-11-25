@@ -4,10 +4,19 @@
     z-index: 10;
     bottom: 2em;
     right: 1em;
+
+    transition: 0.3s;
     @media (min-width: 768px) {
         bottom: 5em;
         right: 2em;
 
+    }
+
+    &.calc_active {
+        bottom: 11em;
+        @media (min-width: 768px) {
+            bottom: 7em;
+        }
     }
 
     a {
