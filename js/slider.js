@@ -3,7 +3,7 @@ $(document).ready(function() {
         slidesPerView: 1,
         speed: 500,
         spaceBetween: 10,
-        // loop: true,
+        loop: true,
         autoplay: {
           delay: 5000,
         },
@@ -154,7 +154,7 @@ function addSliders() {
         let $parent = $(this).parent();
         let swiperDefaults = {
 
-            // loop: true,
+            loop: true,
             slidesPerView: 1,
             // allowTouchMove: false,
 
@@ -172,7 +172,7 @@ function addSliders() {
                 swiper: {
                     el: $parent.closest('.examples__item').find('.gallerySwiperModal-js')[0],
                     // el: '.gallerySwiperModal-js',
-                    // loop: true,
+                    loop: true,
 
                     slidesPerView: 1,
                     allowTouchMove: false,

@@ -832,6 +832,10 @@ body {
   background-color: #F97D7D;
 }
 
+.parallax-el-js {
+  transition: 0.1s;
+}
+
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
@@ -1260,13 +1264,30 @@ body {
     padding: 0;
   }
   .header .menu .menu-item-has-children .menu-item-has-children .sub-menu a:hover {
-    color: #208FA7;
+    color: #1ab6d7;
   }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .header .menu .menu-item-has-children .menu-item-has-children .sub-menu a:hover:after {
+    margin-left: 0.75em;
+    color: #1ab6d7;
+  }
+}
+@media (min-width: 768px) {
   .header .menu .menu-item-has-children .menu-item-has-children .sub-menu a:after {
     content: "";
     font-family: "icomoon";
     font-size: 0.75em;
     margin-left: 0.5em;
+    color: #0F697C;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .header .menu .menu-item-has-children .menu-item-has-children .sub-menu a:after {
+    position: absolute;
+    margin-top: 0.25em;
+    display: inline-block;
+    transition: 0.3s;
   }
 }
 .header .sub-menu {
@@ -1572,19 +1593,39 @@ body {
 .services__title {
   position: relative;
   z-index: 1;
+  text-decoration: none;
   color: #ffffff;
   display: flex;
   align-items: center;
   line-height: 1.1;
 }
-.services__title a {
-  text-decoration: none;
+.services__title span {
   color: #ffffff;
   font-size: 1.125em;
 }
 @media (min-width: 768px) {
-  .services__title a {
+  .services__title span {
     font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) {
+  .services__title:hover .icon_water {
+    color: #18BCB6;
+  }
+  .services__title:hover .icon_tree {
+    color: #C03744;
+  }
+  .services__title:hover .icon_trowel {
+    color: #4BA8E2;
+  }
+  .services__title:hover .icon_monolithic {
+    color: #7C68E1;
+  }
+  .services__title:hover .icon_machine {
+    color: #6C9D46;
+  }
+  .services__title:hover .icon_crane {
+    color: #FB6D6D;
   }
 }
 .services__icon {
@@ -1596,11 +1637,14 @@ body {
   }
 }
 .services__icon i {
+  color: #ffffff;
   font-size: 2em;
 }
 @media (min-width: 768px) {
   .services__icon i {
     font-size: 3.5em;
+    font-weight: 500;
+    transition: color 0.3s;
   }
 }
 .services__toggle {
@@ -1659,6 +1703,7 @@ body {
   font-family: "icomoon";
   font-size: 0.75em;
   margin-left: 0.5em;
+  color: #0F697C;
 }
 @media (min-width: 768px) {
   .services__col a:after {
@@ -1669,11 +1714,12 @@ body {
   }
 }
 .services__col a:hover {
-  color: #208FA7;
+  color: #1ab6d7;
 }
 @media (min-width: 768px) {
   .services__col a:hover:after {
     margin-left: 0.75em;
+    color: #1ab6d7;
   }
 }
 
@@ -1734,6 +1780,12 @@ body {
 @media (min-width: 768px) {
   .discount__title {
     font-size: 2.25em;
+  }
+}
+@media (min-width: 768px) {
+  .discount__inner {
+    overflow: hidden;
+    position: relative;
   }
 }
 .discount__wrap {

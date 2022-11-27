@@ -22,6 +22,13 @@
         }
     }
 
+    &__inner {
+        @media (min-width: 768px) {
+            overflow: hidden;
+            position: relative;
+        }
+    }
+
     &__wrap {
         overflow: hidden;
         position: relative;

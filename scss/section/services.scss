@@ -76,18 +76,46 @@
     &__title {
         position: relative;
         z-index: 1;
+        text-decoration: none;
         color: $color_white;
 
         display: flex;
         align-items: center;
         line-height: 1.1;
 
-        a {
-            text-decoration: none;
+        span {
             color: $color_white;
             font-size: 1.125em;
             @media (min-width: 768px) {
                 font-size: 1.5em;
+            }
+        }
+
+        @media (min-width: 768px) {
+            &:hover {
+                .icon_water {
+                    color: #18BCB6;
+                }
+
+                .icon_tree {
+                    color: #C03744;
+                }
+
+                .icon_trowel {
+                    color: #4BA8E2;
+                }
+
+                .icon_monolithic {
+                    color: #7C68E1;
+                }
+
+                .icon_machine {
+                    color: #6C9D46;
+                }
+
+                .icon_crane {
+                    color: #FB6D6D;
+                }
             }
         }
 
@@ -101,9 +129,12 @@
         }
 
         i {
+            color: $color_white;
             font-size: 2em;
             @media (min-width: 768px) {
                 font-size: 3.5em;
+                font-weight: 500;
+                transition: color 0.3s;
 
             }
         }
@@ -169,6 +200,7 @@
                 font-family: 'icomoon';
                 font-size: 0.75em;
                 margin-left: 0.5em;
+                color: $color_info;
 
                 @media (min-width: 768px) {
                     position: absolute;
@@ -182,11 +214,12 @@
             }
 
             &:hover {
-                color: #208FA7;
+                color: lighten($color_info, 20%);
 
                 @media (min-width: 768px) {
                     &:after {
                         margin-left: 0.75em;
+                        color: lighten($color_info, 20%);
 
                     }
                 }

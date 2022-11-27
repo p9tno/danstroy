@@ -168,11 +168,19 @@
 
                         a {
                             font-size: 0.875em;
-                            color: #0F697C;
+                            color: $color_info;
                             padding: 0;
 
                             &:hover {
-                                color: #208FA7;
+                                color: lighten($color_info, 20%);
+
+                                @media (min-width: 768px) {
+                                    &:after {
+                                        margin-left: 0.75em;
+                                        color: lighten($color_info, 20%);
+
+                                    }
+                                }
                             }
 
                             &:after {
@@ -180,6 +188,17 @@
                                 font-family: 'icomoon';
                                 font-size: 0.75em;
                                 margin-left: 0.5em;
+                                color: $color_info;
+
+                                @media (min-width: 768px) {
+                                    position: absolute;
+                                    margin-top: 0.25em;
+                                    // top: 1em;
+
+                                    display: inline-block;
+                                    transition: 0.3s;
+
+                                }
 
                             }
                         }

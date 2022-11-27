@@ -34,8 +34,8 @@ block content
                         i.icon_arrow_left
                         i.icon_arrow_right
 
-                .firstscreen__el.bg.firstscreen__el_1.desktop
-                .firstscreen__el.bg.firstscreen__el_2.desktop
+                .firstscreen__el.bg.firstscreen__el_1.desktop(data-speed="-0.2").parallax-el-js
+                .firstscreen__el.bg.firstscreen__el_2.desktop(data-speed="0.4").parallax-el-js
 
     // end firstscreen
 
@@ -59,10 +59,10 @@ block content
                                     i.icon_arrow_bottom
 
                             .services__bg.bg(style="background-image: url('../../img/services_"+item.bg+".webp')")
-                                .services__title
+                                a(href="#").services__title
                                     .services__icon!=item.icon
                                         //- i.icon_water
-                                    a(href="#")=item.title
+                                    span=item.title
 
 
                             .collapse__body(data-collapse-body="")
@@ -87,35 +87,36 @@ block content
 
     // begin discount
     section#discount.discount.section.bg
+        .discount__inner
+            .container_center
+                .discount__wrap
+                    //- .discount__number.discount__number_5.bg
+                    //- .discount__number.discount__number_left
+                    .discount__number.big_number
+                        .number
+                            span 5
+                            i 5
+                    .discount__content
+                        .discount__title
+                            span Скидка на строительные  работы до конца октября
+                        .discount__label
+                            span При заказе строительства дома под ключ*
+                        .discount__action
+                            a.btn.btn_arrow.btn_bg.show_js(href="#aveQuestions")
+                                span Получить скидку
+
+                    .discount__circle.discount__circle_center.desktop
+
+            .discount__circle.bg.discount__circle_left.desktop(data-aos="fade-right" data-aos-delay="400")
+            .discount__circle.bg.discount__circle_right.desktop(data-aos="fade-left" data-aos-delay="600")
 
 
-        .container_center
-            .discount__wrap
-                //- .discount__number.discount__number_5.bg
-                //- .discount__number.discount__number_left
-                .discount__number.big_number
-                    .number
-                        span 5
-                        i 5
-                .discount__content
-                    .discount__title
-                        span Скидка на строительные  работы до конца октября
-                    .discount__label
-                        span При заказе строительства дома под ключ*
-                    .discount__action
-                        a.btn.btn_arrow.btn_bg.show_js(href="#aveQuestions")
-                            span Получить скидку
 
-                .discount__circle.discount__circle_center.desktop
+        .discount__sheet.bg.discount__sheet_1(data-speed="0.2").parallax-el-js
+        .discount__sheet.bg.discount__sheet_2.desktop(data-speed="-0.4").parallax-el-js
+        .discount__sheet.bg.discount__sheet_3.desktop(data-speed="0.4").parallax-el-js
 
 
-
-        .discount__sheet.bg.discount__sheet_1
-        .discount__sheet.bg.discount__sheet_2.desktop
-        .discount__sheet.bg.discount__sheet_3.desktop
-        .discount__circle.bg.discount__circle_left.desktop
-
-        .discount__circle.bg.discount__circle_right.desktop
 
 
     // end discount
@@ -197,22 +198,22 @@ block content
         .container_center
             h2 Четыре простых шага для вызова мастера
             .steps__list
-                .steps__item
+                .steps__item(data-aos="fade-right"  data-aos-delay="0")
                     .steps__img
                         img(src="../img/step_1.svg")
                     .steps__text
                         span Вы оставляете заявку на сайте  или по телефону
-                .steps__item
+                .steps__item(data-aos="fade-right"  data-aos-delay="200")
                     .steps__img
                         img(src="../img/step_2.svg")
                     .steps__text
                         span Менеджер свяжется с вами для обсуждения деталей
-                .steps__item
+                .steps__item(data-aos="fade-right"  data-aos-delay="400")
                     .steps__img
                         img(src="../img/step_3.svg")
                     .steps__text
                         span Определение вида техники, согласование проекта
-                .steps__item
+                .steps__item(data-aos="fade-right"  data-aos-delay="600")
                     .steps__img
                         img(src="../img/step_4.svg")
                     .steps__text
@@ -247,9 +248,9 @@ block content
                 .ourwork__right
                     .ourwork__bg.bg
                         .lider__foto.bg(style="background-image: url('../../img/lider.webp')")
-                        .ourwork__el.bg.ourwork__el_1
-                        .ourwork__el.bg.ourwork__el_2
-                        .ourwork__el.bg.ourwork__el_3
+                        .ourwork__el.bg.ourwork__el_1(data-speed="-0.2").parallax-el-js
+                        .ourwork__el.bg.ourwork__el_2(data-speed="-0.8").parallax-el-js
+                        .ourwork__el.bg.ourwork__el_3(data-speed="0.4").parallax-el-js
 
 
 

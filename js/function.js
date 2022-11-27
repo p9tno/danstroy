@@ -1,40 +1,20 @@
 var app = {
     pageScroll: '',
+    pageFs: 16,
     lgWidth: 1200,
     mdWidth: 992,
     smWidth: 768,
     resized: false,
-    iOS: function () {
-        return navigator.userAgent.match( /iPhone|iPad|iPod/i );
-    },
-    touchDevice: function () {
-        return navigator.userAgent.match( /iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i );
-    }
+    iOS: function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
+    touchDevice: function() { return navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i); }
 };
 
-function isLgWidth() {
-    return $( window ).width() >= app.lgWidth;
-} // >= 1200
-function isMdWidth() {
-    return $( window ).width() >= app.mdWidth && $( window ).width() < app.lgWidth;
-} //  >= 992 && < 1200
-function isSmWidth() {
-    return $( window ).width() >= app.smWidth && $( window ).width() < app.mdWidth;
-} // >= 768 && < 992
-function isXsWidth() {
-    return $( window ).width() < app.smWidth;
-} // < 768
-function isIOS() {
-    return app.iOS();
-} // for iPhone iPad iPod
-function isTouch() {
-    return app.touchDevice();
-} // for touch device
-
-isLgWidth();
-
-
-
+function isLgWidth() { return $(window).width() >= app.lgWidth; } // >= 1200
+function isMdWidth() { return $(window).width() >= app.mdWidth && $(window).width() < app.lgWidth; } //  >= 992 && < 1200
+function isSmWidth() { return $(window).width() >= app.smWidth && $(window).width() < app.mdWidth; } // >= 768 && < 992
+function isXsWidth() { return $(window).width() < app.smWidth; } // < 768
+function isIOS() { return app.iOS(); } // for iPhone iPad iPod
+function isTouch() { return app.touchDevice(); } // for touch device
 
 $(document).ready(function() {
 
@@ -108,7 +88,6 @@ $(document).ready(function() {
     showModal();
 
     $('.modal').on('show.bs.modal', () => {
-        // let openedModal = $('.modal.in:not(.popapCalc)');
         let openedModal = $('.modal');
         if (openedModal.length > 0) {
             openedModal.modal('hide');
@@ -122,7 +101,6 @@ $(document).ready(function() {
             e.preventDefault();
             $(this).toggleClass('open');
             let dropBox = $(this).parent().parent().children();
-            // console.log(dropBox);
             // dropBox.slideDown();
             dropBox.toggleClass('open');
 
@@ -187,66 +165,9 @@ $(document).ready(function() {
     }
     collapsed();
 
-    // .content__collapse
-    //
-    //     .collapse__title(data-collapse="")
-    //
-    //     .collapse__body(data-collapse-body="")
-
-
-    function doTabs() {
-        $('.tabs__item').on('click', function() {
-            $('.tabs__item').removeClass('active');
-            $(this).addClass('active');
-
-            $('.tabContent__item').removeClass('active');
-            $($(this).data('tab')).addClass('active');
-        });
-    };
-    doTabs();
-
-    // <div class="tabs-wrapper">
-    //     <div class="tabs">
-    //         <span class="tab">Вкладка 1</span>
-    //         <span class="tab">Вкладка 2</span>
-    //         <span class="tab">Вкладка 3</span>
-    //     </div>
-    //     <div class="tabs-content">
-    //         <div class="tab-item">Содержимое 1</div>
-    //         <div class="tab-item">Содержимое 2</div>
-    //         <div class="tab-item">Содержимое 3</div>
-    //     </div>
-    // </div>
-
-    // jQuery
-    // $('.tabs-wrapper').each(function() {
-    //     let ths = $(this);
-    //     ths.find('.tab-item').not(':first').hide();
-    //     ths.find('.tab').click(function() {
-    //         ths.find('.tab').removeClass('active').eq($(this).index()).addClass('active');
-    //         ths.find('.tab-item').hide().eq($(this).index()).fadeIn()
-    //     }).eq(0).addClass('active');
-    // });
-
-
-    function doDrop() {
-        $('.drop__toggle').on('click', function() {
-            // $('.drop__list').toggleClass('open');
-            $(this).toggleClass('active');
-            $(this).closest('.drop').find('.drop__list').toggleClass('open');
-        });
-    };
-    doDrop();
-
 
     function stikyMenu() {
-
-        // let HeaderTop = $( '.header__bottom' ).offset().top;
-
-        // let HeaderTop = $( '.header__bottom' ).offset().top;
-        // let HeaderTop = $( 'header' ).offset().top + $( '.section' ).innerHeight();
         let HeaderTop = $('.header' ).innerHeight();
-        // console.log(HeaderTop);
         let currentTop = $( window ).scrollTop();
 
         setNavbarPosition();
@@ -310,6 +231,56 @@ $(document).ready(function() {
 
     $(function(){
         $(".tel").mask("8 (999) 999 9999");
+    });
+
+    function mouseMoveParallax() {
+        let wrapper = $('.parallax-wrap-js');
+        let item = $('.parallax-el-js');
+        let speed = 0;
+        let offsetX;
+        let offsetY;
+
+        if (isXsWidth()) return false;
+
+        wrapper.on('mousemove', function(even) {
+            // console.log(even.screenX);
+
+            // console.log(even.clientX - $(window).width() / 2);
+
+            offsetX = -(even.clientX - $(window).width() / 2);
+
+            offsetY = -(even.clientY - $(window).width() / 2);
+
+            item.each(function(index, el) {
+                speed = $(el).data('speed');
+                $(el).attr('style', 'transform: translate3d('+(offsetX*speed/1000)+'em, '+(offsetY*speed/1000)+'em , 0)');
+            });
+        });
+
+        wrapper.on('mouseleave', function(even) {
+            item.each(function(index, el) {
+                speed = $(el).data('speed');
+                $(el).attr('style', 'transform: translate3d(0, 0 , 0)');
+            });
+        });
+    }
+
+    mouseMoveParallax();
+
+    // https://github.com/michalsnik/aos
+    AOS.init({
+        disable: 'mobile',
+        // anchorPlacement: 'bottom-bottom',
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        // offset: 20,
+        // once: true,
+    });
+
+    AOS.init({
+        disable: function () {
+            var maxWidth = 768;
+            return window.innerWidth < maxWidth;
+        }
     });
 
 })
